@@ -59,3 +59,5 @@ In this stage of data Preprocessing, we will start a Notebook with the following
 * Enconding Categorical Data
 * Spliting the dataset into the **Training set** and **Test Set**
 * Feature Scalling
+
+[Notebook code](https://github.com/Leonardofreua/Machine-Learning-A-Z-Python-and-R-in-Data-Science/blob/master/Data%20Preprocessing/Python/data_preprocessing_tools.ipynb)
