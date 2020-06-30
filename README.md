@@ -7,6 +7,7 @@
   * [Articial Intelligence](###artificial-intelligence)
   * [Machine Learning](###machine-learning)
   * [Deep Learning](###deep-learning)
+* [Data Preprocessing in Python](#data-preprocessing-in-python)
 
 # Applications of `Machine Learning`
 
@@ -47,3 +48,14 @@ DL is inspired by the functioning of the human brain in relation to pattern proc
 Just as our brain identifies patterns and classifies them, Deep Learning algorithms are implemented to behave in the same way.
 
 Comparing the functioning of Deep Learning and Machine Learning, we can see that while the DL can discover the features that must be applied in a classification, the ML needs that these features are provided manually.
+
+# Data Preprocessing in Python
+
+In this stage of data Preprocessing, we will start a Notebook with the following approaches:
+
+* Importing the Libraries
+* Importing the Dataset
+* Taking care of Missing Data
+* Enconding Categorical Data
+* Spliting the dataset into the **Training set** and **Test Set**
+* Feature Scalling
