@@ -1,5 +1,3 @@
-# Machine-Learning-A-Z-Python-R-in-Data-Science
-
 ### Summary
 
 * [Applications of Machine Learning](#applications-of-machine-learning)
@@ -53,6 +51,8 @@ Comparing the functioning of Deep Learning and Machine Learning, we can see that
 
 In this stage of data Preprocessing, we will start a Notebook with the following approaches:
 
+[Notebook code](https://github.com/Leonardofreua/Machine-Learning-A-Z-Python-and-R-in-Data-Science/blob/master/Data%20Preprocessing/Python/data_preprocessing_tools.ipynb)
+
 * Importing the Libraries
 * Importing the Dataset
 * Taking care of Missing Data
@@ -60,4 +60,3 @@ In this stage of data Preprocessing, we will start a Notebook with the following
 * Spliting the dataset into the **Training set** and **Test Set**
 * Feature Scalling
 
-[Notebook code](https://github.com/Leonardofreua/Machine-Learning-A-Z-Python-and-R-in-Data-Science/blob/master/Data%20Preprocessing/Python/data_preprocessing_tools.ipynb)
