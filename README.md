@@ -55,8 +55,14 @@ In this stage of data Preprocessing, we will start a Notebook with the following
 
 * Importing the Libraries
 * Importing the Dataset
-* Taking care of Missing Data
-* Enconding Categorical Data
+* Taking care of Missing Data:
+  > We perform this procedure by taking the empty data and replacing it with the average.
+* Enconding Categorical Data: 
+  > Encoding is necessary at this point, because as there is no relationship between country names, we do not want an incorrect interpretation made by the model, which would causa inaccurate correlattions and consequently impact it's accuracy. So, the encoding methods applied here is **[One Hot Encoding](https://en.wikipedia.org/wiki/One-hot)** and to **Purchased** column we applied the **[Label Encoding](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.LabelEncoder.html)**.
+
+  *References:*
+  > *For more about encondig methods, see the following link:* [All about Categorical Variable Encoding](https://towardsdatascience.com/all-about-categorical-variable-encoding-305f3361fd02)<br />
+  *For more about Categorial variable, see the following link:* [Categorical Variable](https://en.wikipedia.org/wiki/Categorical_variable)
 * Spliting the dataset into the **Training set** and **Test Set**
 * Feature Scalling
 
