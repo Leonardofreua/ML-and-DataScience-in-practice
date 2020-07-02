@@ -78,7 +78,7 @@ In this stage of data Preprocessing, we will start a Notebook with the following
   > **Standardisation**: We use this approach in most situations, as it always provides good performance towards standard deviation.
 
   <p align="center">
-    <img src=".github/standarlisation.png" alt="Standarlisation"/>
+    <img src=".github/standardisation.png" alt="Standarlisation"/>
   </p>
 
   >*Reference:*<br />
