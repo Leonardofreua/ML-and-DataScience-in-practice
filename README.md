@@ -68,6 +68,18 @@ In this stage of data Preprocessing, we will start a Notebook with the following
   > The use of any data from the Test suite before or during training is a potential bias in assessing performance.
 * Feature Scalling:
   > Feature scaling is the process of scaling the values of features in a dataset so that they proportionally contribute to the distance calculation. The two most commonly used feature scaling techniques are Standardisation (or Z-Score Normalisation) and Min-Max scaling.
+  
+  > **Normalisation**: Is recommended when have a normal distribuition on most of your resources.
+  
+  <p align="center">
+    <img src=".github/normalisation.png" alt="Normalisation"/>
+  </p>
+
+  > **Standardisation**: We use this approach in most situations, as it always provides good performance towards standard deviation.
+
+  <p align="center">
+    <img src=".github/standarlisation.png" alt="Standarlisation"/>
+  </p>
 
   >*Reference:*<br />
   [Feature Scaling and Normalisation in a nutshell](https://medium.com/@giorgosmyrianthous/feature-scaling-and-normalisation-in-a-nutshell-5319af86f89b)
