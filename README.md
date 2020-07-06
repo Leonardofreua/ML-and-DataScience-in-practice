@@ -82,5 +82,6 @@ In this stage of data Preprocessing, we will start a Notebook with the following
   </p>
 
   >*Reference:*<br />
-  [Feature Scaling and Normalisation in a nutshell](https://medium.com/@giorgosmyrianthous/feature-scaling-and-normalisation-in-a-nutshell-5319af86f89b)
+  [Feature Scaling and Normalisation in a nutshell](https://medium.com/@giorgosmyrianthous/feature-scaling-and-normalisation-in-a-nutshell-5319af86f89b)<br />
+  [Euclidian Distance](https://en.wikipedia.org/wiki/Euclidean_distance)
 
