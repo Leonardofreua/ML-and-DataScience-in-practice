@@ -5,7 +5,8 @@
   * [Articial Intelligence](###artificial-intelligence)
   * [Machine Learning](###machine-learning)
   * [Deep Learning](###deep-learning)
-* [Data Preprocessing in Python](#data-preprocessing-in-python)
+* [Data Preprocessing](#data-preprocessing-in-python)
+
 
 # Applications of `Machine Learning`
 
@@ -47,7 +48,7 @@ Just as our brain identifies patterns and classifies them, Deep Learning algorit
 
 Comparing the functioning of Deep Learning and Machine Learning, we can see that while the DL can discover the features that must be applied in a classification, the ML needs that these features are provided manually.
 
-# Data Preprocessing in Python
+# Data Preprocessing
 
 In this stage of data Preprocessing, we will start a Notebook with the following approaches:
 
