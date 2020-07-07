@@ -92,6 +92,8 @@ In this stage of data Preprocessing, we will start a Notebook with the following
 
 ## Simple Linear Regression
 
+[Notebook code](https://github.com/Leonardofreua/Machine-Learning-A-Z-Python-and-R-in-Data-Science/blob/master/Regression/Simple%20Linear%20Regression/Python/simple_linear_regression.ipynb)
+
 *Is a statiscal method for obtaining a formula to predict values of one variable from another where there is a casual relationship between the two variables.*
 
 Simple Linear Regression makes predictions of the **dependent variable (Y)** based on the value of the **independent variable (X)**.
