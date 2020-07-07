@@ -6,6 +6,8 @@
   * [Machine Learning](###machine-learning)
   * [Deep Learning](###deep-learning)
 * [Data Preprocessing](#data-preprocessing-in-python)
+* [Regression](#regression)
+  * [Simple Linear Regression](#simple-linear-regression)
 
 
 # Applications of `Machine Learning`
@@ -86,3 +88,45 @@ In this stage of data Preprocessing, we will start a Notebook with the following
   [Feature Scaling and Normalisation in a nutshell](https://medium.com/@giorgosmyrianthous/feature-scaling-and-normalisation-in-a-nutshell-5319af86f89b)<br />
   [Euclidian Distance](https://en.wikipedia.org/wiki/Euclidean_distance)
 
+# Regression
+
+## Simple Linear Regression
+
+*Is a statiscal method for obtaining a formula to predict values of one variable from another where there is a casual relationship between the two variables.*
+
+Simple Linear Regression makes predictions of the **dependent variable (Y)** based on the value of the **independent variable (X)**.
+
+ <p align="center">
+  <img src=".github/simple_linear_regression.png" alt="Simple Linear Regression" width="450"/>
+</p>
+
+**Equation**:
+<p align="center">
+  <img src=".github/SLR_equation.png" alt="SLR Equation" width="400"/>
+
+  <em>Font: [Simple linear regression Equation](https://rstudio-pubs-static.s3.amazonaws.com/401724_c38918314a8d479ab351f4f83a8fa284.html)</em>
+</p>
+
+> **Random Error term (ε)** is used to represent **Irreducible Errors**, some of which are inherent to the nature of the problem.
+
+### Aplication examples
+
+* Study how the parent's height may influence their children's height;
+* Estimate thhe price of a house depending on it's surface;
+* Predict the unemployment level for different ages;
+* Approximate the grades attained in a subject as a function of the number of study hours per week;
+* Forecast the execution time of a program depending on the speed of the processor.
+
+### How to find the best fit line?
+
+The center line represents the best fit line or the Simple Linear regression model. Then, the **Red Cross** marked in the image, represents a person who has for example: 10 years of experience and earns the US $ 100,000. Already, the **Green Cross** shows us where this person should be acordding to his experience. Therefore, the Green Line between the two crosses is the difference between what he is really earning and what he should be.
+
+Now, to better adjust this line, add the values of the red and green cross, then square the result, and find the minimum, As depicted in the image:
+
+ <p align="center">
+  <img src=".github/find_the_best_fit_line.png" alt="How to find best fit line?" width="450"/>
+</p>
+
+Reference:<br />
+[Simple linear regression](http://www.statstutor.ac.uk/resources/uploaded/slregression.pdf)<br />
+[Statistics II - Lesson 4. Simple linear regression](http://halweb.uc3m.es/esp/Personal/personas/aarribas/eng/docs/estII/tema4_eng.pdf)
