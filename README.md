@@ -22,8 +22,6 @@ There is often a difficulty in understanding the differences between Artificial 
 
 <p align="center">
   <img src=".github/difference_between_AI_ML_and_DL.png" alt="Difference between AI, ML and DL"/>
-
-  <em>Font: [Oracle Big Data Blog](https://blogs.oracle.com/bigdata/difference-ai-machine-learning-deep-learning)</em>
 </p>
   
 ### **Artificial Intelligence:**
