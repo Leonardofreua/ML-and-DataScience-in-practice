@@ -90,7 +90,7 @@ In this stage of data Preprocessing, we will start a Notebook with the following
 
 ## Simple Linear Regression
 
-[Notebook code](https://github.com/Leonardofreua/Machine-Learning-A-Z-Python-and-R-in-Data-Science/blob/master/Regression/Simple%20Linear%20Regression/Python/simple_linear_regression.ipynb)
+[Notebook code](https://github.com/Leonardofreua/Machine-Learning-A-Z-Python-and-R-in-Data-Science/blob/master/Regression/Simple%20Linear%20Regression/Python/simple_linear_regression.ipynb) | [R code](https://github.com/Leonardofreua/Machine-Learning-A-Z-Python-and-R-in-Data-Science/blob/master/Regression/Simple%20Linear%20Regression/R/simple_linear_regression.R)
 
 *Is a statiscal method for obtaining a formula to predict values of one variable from another where there is a casual relationship between the two variables.*
 
