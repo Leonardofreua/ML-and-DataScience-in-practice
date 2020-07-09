@@ -82,7 +82,7 @@ In this stage of data Preprocessing, we will start a Notebook with the following
     <img src=".github/standardisation.png" alt="Standarlisation"/>
   </p>
 
-  >*Reference:*<br />
+  >*References:*<br />
   [Feature Scaling and Normalisation in a nutshell](https://medium.com/@giorgosmyrianthous/feature-scaling-and-normalisation-in-a-nutshell-5319af86f89b)<br />
   [Euclidian Distance](https://en.wikipedia.org/wiki/Euclidean_distance)
 
@@ -127,6 +127,6 @@ Now, to better adjust this line, add the values of the red and green cross, then
   <img src=".github/find_the_best_fit_line.png" alt="How to find best fit line?" width="450"/>
 </p>
 
-Reference:<br />
+References:<br />
 [Simple linear regression](http://www.statstutor.ac.uk/resources/uploaded/slregression.pdf)<br />
 [Statistics II - Lesson 4. Simple linear regression](http://halweb.uc3m.es/esp/Personal/personas/aarribas/eng/docs/estII/tema4_eng.pdf)
