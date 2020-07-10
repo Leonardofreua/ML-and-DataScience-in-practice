@@ -160,6 +160,7 @@ Now, to better adjust this line, add the values of the red and green cross, then
 - [4.2.3. Assumptions of multiple linear regression](#423-assumptions-of-multiple-linear-regression)
 - [4.2.4. Dummy Variables](#424-dummy-variables)
 - [4.2.5. Dummy Variable Trap](#425-dummy-variable-trap)
+- [4.2.6. Building a Model with the right methods](#426-building-a-model-with-the-right-methods)
 
 ---
 
@@ -332,7 +333,7 @@ Due to the possibility that there are many variables involved in our model, thes
 * **Forward Selection**:
   > **Step 1**: Select a significance level to stay in the model (e.g. SL = 0.05);
   >
-  > **Step 2**: Fit all simple regression models **y ~ X~n~** . Select the one with the lowest P-value (quite laborious);
+  > **Step 2**: Fit all simple regression models **y ~ Xn** . Select the one with the lowest P-value (quite laborious);
   >
   > **Step 3**: Keep this variable and fit all possible models with one extra predictor added to the one(s) you already have;
   >
