@@ -17,8 +17,7 @@
     - [4.2.3. Assumptions of multiple linear regression](#423-assumptions-of-multiple-linear-regression)
     - [4.2.4. Dummy Variables](#424-dummy-variables)
     - [4.2.5. Dummy Variable Trap](#425-dummy-variable-trap)
-
-
+    - [Building a Model with the right methods](#building-a-model-with-the-right-methods)
 
 # 1. Applications of `Machine Learning`
 
@@ -312,7 +311,44 @@ And our equation  would be presented as follows:
   <img src=".github/MLR_equation_4.png" alt="MLR Equation 4"/>
 </p>
 
+### Building a Model with the right methods
+
+Due to the possibility that there are many variables involved in our model, these can negatively impact accuracy. Therefore, we need to apply some methods to ensure good accuracy:
+
+> **Note**:
+> SL = [Statistical Significance](https://towardsdatascience.com/statistical-significance-hypothesis-testing-the-normal-curve-and-p-values-93274fa32687) 
+
+* **Backward Elimination**:  
+  > **Step 1**: Select a significance level to stay in the model (e.g. SL = 0.05);
+
+  > **Step 2**: Fit the full mode with all possible predictors;
+  >
+  > **Step 3**: Consider the predictor with the **highest** P-Value. If P > SL, go to **STEP 4**, otherwise go to FIN (*Your model is ready*);
+  >
+  > **Step 4**: Remove the predictor;
+  >
+  > **Step 5**: Fit model without this variable. So, return to the **Step 3**.
+
+* **Forward Selection**:
+  > **Step 1**: Select a significance level to stay in the model (e.g. SL = 0.05);
+  >
+  > **Step 2**: Fit all simple regression models **$y \sim X_n$**. Select the one with the lowest P-value (quite laborious);
+  >
+  > **Step 3**: Keep this variable and fit all possible models with one extra predictor added to the one(s) you already have;
+  >
+  > **Step 4**: Consider the predictor with the <u>lowest</u> P-value. If P > SL, go to **STEP 3**, otherwise go to FIN (*Keep the previous model*).
+
+ * **Bidirectional Elimination**:
+  > **Step 1**: Select a significance level to enter and to stay in the model e.g.: *SL***ENTER** = 0.05, *SL***STAY** = 0.05;
+  >
+  > **Step 2**: Perform the next step of Forward Selection (new variabes must have: P < *SL***ENTER** to enter);
+  >
+  > **Step 3**: Perform ALL steps of Backward Elimination (old variabes must have: P < *SL***STAY** to stay);
+  >> Then, go back to **step 2** and repeat this cycle between **step 2** and **step 3** until no new variables can enter and no old variables can exit.
+  >
+  > **Step 4**: No new variables can enter and no old variables can exit, FIN (Your model is ready).
 
 **References**:<br />
 [An introduction to multiple linear regression](https://www.scribbr.com/statistics/multiple-linear-regression/)<br />
 [Multiple Linear Regression](http://mezeylab.cb.bscb.cornell.edu/labmembers/documents/supplement%205%20-%20multiple%20regression.pdf)
+[Statistical Significance Explained](https://towardsdatascience.com/statistical-significance-hypothesis-testing-the-normal-curve-and-p-values-93274fa32687)
