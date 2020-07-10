@@ -92,6 +92,19 @@ In this stage of data Preprocessing, we will start a Notebook with the following
 
 [Notebook code](https://github.com/Leonardofreua/Machine-Learning-A-Z-Python-and-R-in-Data-Science/blob/master/Regression/Simple%20Linear%20Regression/Python/simple_linear_regression.ipynb) | [R code](https://github.com/Leonardofreua/Machine-Learning-A-Z-Python-and-R-in-Data-Science/blob/master/Regression/Simple%20Linear%20Regression/R/simple_linear_regression.R)
 
+---
+**Topics covered:**
+
+1 - Definition
+
+2 - Aplication examples of SLR
+
+3 - How to find the best fit line?
+
+---
+
+### Definition
+
 *Is a statiscal method for obtaining a formula to predict values of one variable from another where there is a casual relationship between the two variables.*
 
 Simple Linear Regression makes predictions of the **dependent variable (Y)** based on the value of the **independent variable (X)**.
@@ -132,6 +145,21 @@ Now, to better adjust this line, add the values of the red and green cross, then
 [Statistics II - Lesson 4. Simple linear regression](http://halweb.uc3m.es/esp/Personal/personas/aarribas/eng/docs/estII/tema4_eng.pdf)
 
 ## Multiple Linear Regression
+
+---
+**Topics covered:**
+
+1 - Definition
+
+2 - Aplication examples of SLR
+
+3 - Assumptions of multiple linear regression
+
+4 - Dummy Variables
+
+---
+
+### Definition
 
 *Multiple linear regression is used to estimate the relationship between two or more independent variables and one dependent variable.*
 
