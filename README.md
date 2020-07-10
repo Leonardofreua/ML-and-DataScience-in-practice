@@ -1,4 +1,4 @@
-### 0.0.1. Summary
+### Summary
 
 - [1. Applications of `Machine Learning`](#1-applications-of-machine-learning)
 - [2. Difference between AI, ML and DL](#2-difference-between-ai-ml-and-dl)
@@ -17,7 +17,7 @@
     - [4.2.3. Assumptions of multiple linear regression](#423-assumptions-of-multiple-linear-regression)
     - [4.2.4. Dummy Variables](#424-dummy-variables)
     - [4.2.5. Dummy Variable Trap](#425-dummy-variable-trap)
-    - [Building a Model with the right methods](#building-a-model-with-the-right-methods)
+    - [4.2.6. Building a Model with the right methods](#426-building-a-model-with-the-right-methods)
 
 # 1. Applications of `Machine Learning`
 
@@ -311,7 +311,7 @@ And our equation  would be presented as follows:
   <img src=".github/MLR_equation_4.png" alt="MLR Equation 4"/>
 </p>
 
-### Building a Model with the right methods
+### 4.2.6. Building a Model with the right methods
 
 Due to the possibility that there are many variables involved in our model, these can negatively impact accuracy. Therefore, we need to apply some methods to ensure good accuracy:
 
@@ -332,7 +332,7 @@ Due to the possibility that there are many variables involved in our model, thes
 * **Forward Selection**:
   > **Step 1**: Select a significance level to stay in the model (e.g. SL = 0.05);
   >
-  > **Step 2**: Fit all simple regression models **$y \sim X_n$**. Select the one with the lowest P-value (quite laborious);
+  > **Step 2**: Fit all simple regression models **y ~ X~n~** . Select the one with the lowest P-value (quite laborious);
   >
   > **Step 3**: Keep this variable and fit all possible models with one extra predictor added to the one(s) you already have;
   >
@@ -350,5 +350,5 @@ Due to the possibility that there are many variables involved in our model, thes
 
 **References**:<br />
 [An introduction to multiple linear regression](https://www.scribbr.com/statistics/multiple-linear-regression/)<br />
-[Multiple Linear Regression](http://mezeylab.cb.bscb.cornell.edu/labmembers/documents/supplement%205%20-%20multiple%20regression.pdf)
+[Multiple Linear Regression](http://mezeylab.cb.bscb.cornell.edu/labmembers/documents/supplement%205%20-%20multiple%20regression.pdf)<br />
 [Statistical Significance Explained](https://towardsdatascience.com/statistical-significance-hypothesis-testing-the-normal-curve-and-p-values-93274fa32687)
