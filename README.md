@@ -2,9 +2,9 @@
 
 - [1. Applications of `Machine Learning`](#1-applications-of-machine-learning)
 - [2. Difference between AI, ML and DL](#2-difference-between-ai-ml-and-dl)
-    - [2.0.1. **Artificial Intelligence**](#201-artificial-intelligence)
-    - [2.0.2. **Machine Learning**](#202-machine-learning)
-    - [2.0.3. **Deep Learning**](#203-deep-learning)
+  - [2.1. **Artificial Intelligence**](#21-artificial-intelligence)
+  - [2.2. **Machine Learning**](#22-machine-learning)
+  - [2.3. **Deep Learning**](#23-deep-learning)
 - [3. Data Preprocessing](#3-data-preprocessing)
 - [4. Regression](#4-regression)
   - [4.1. Simple Linear Regression](#41-simple-linear-regression)
@@ -34,7 +34,7 @@ There is often a difficulty in understanding the differences between Artificial 
   <img src=".github/difference_between_AI_ML_and_DL.png" alt="Difference between AI, ML and DL"/>
 </p>
   
-### 2.0.1. **Artificial Intelligence**
+## 2.1. **Artificial Intelligence**
 
 Artificial Intelligence is a term that was created in 1955 and that can be interpreted basically as the name suggests, that is, **the incorporation of human intelligence in machines**.
 
@@ -42,13 +42,13 @@ So, whenever a machine performs a task, which has been implemented with a set of
 
 If it is still difficult to observe this, we can cite some examples very close to us, such as: our fridges, washing machines, SmartPhones, car or house alarms, among thousands of other devices that we use in our day today.
 
-### 2.0.2. **Machine Learning**
+## 2.2. **Machine Learning**
 
 Again, as the name suggests, it is the ability of machines to learn and we can interpret this as a way of instructing machines with teachings so that they can perform specific tasks.
 
 We can do this by providing data so that the machine understands the patterns (training) and from there makes decisions based on what it has learned. It is like teaching certain taks to a child, you explain to him how to perform a certain task with examples (data), he performs that task several times to really learn (training) and, depending on this performance, you help him so that he can perform the task more efficiently (accurately).
 
-### 2.0.3. **Deep Learning**
+## 2.3. **Deep Learning**
 
 Deep Learning is a subset of the Machine Learning universe, we can interpret it as the next evolution of Machine Learning itself.
 
