@@ -159,6 +159,22 @@ You can use multiple linear regression when you want to know:
 
 ### Assumptions of multiple linear regression
 
+* **Homogeneity of variance (homoscedasticity)**: the size of the error in our prediction doesn’t change significantly across the values of the independent variable.
+
+* **Independence of observations**: the observations in the dataset were collected using statistically valid methods, and there are no hidden relationships among variables.
+
+  In multiple linear regression, it is possible that some of the independent variables are actually correlated with one another, so it is important to check these before developing the regression model. If two independent variables are too highly correlated (r2 > ~0.6), then only one of them should be used in the regression model.
+
+* **Normality**: Multple regression assumes that the residuals are normally distributed.
+
+<p align="center">
+  <img src=".github/normality_assumption.png" alt="Normality Assumption" width="450"/>
+
+  <em>Font: [Going Deeper into Regression Analysis with Assumptions, Plots & Solutions](https://www.analyticsvidhya.com/blog/2016/07/deeper-regression-analysis-assumptions-plots-solutions/)</em>
+</p>
+
+* **Linearity**: the line of best fit through the data points is a straight line, rather than a curve or some sort of grouping factor.
+
 ### Dummy Variables
 
 To understand how dummy variables work, let's take into account the information below:
