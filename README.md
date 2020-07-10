@@ -8,6 +8,7 @@
 * [Data Preprocessing](#data-preprocessing-in-python)
 * [Regression](#regression)
   * [Simple Linear Regression](#simple-linear-regression)
+  * [Multiple Linear Regression](#multiple-linear-regression)
 
 
 # Applications of `Machine Learning`
@@ -61,8 +62,7 @@ In this stage of data Preprocessing, we will start a Notebook with the following
 * Enconding Categorical Data: 
   > Encoding is necessary at this point, because as there is no relationship between country names, we do not want an incorrect interpretation made by the model, which would causa inaccurate correlattions and consequently impact it's accuracy. So, the encoding methods applied here is **[One Hot Encoding](https://en.wikipedia.org/wiki/One-hot)** and to **Purchased** column we applied the **[Label Encoding](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.LabelEncoder.html)**.
 
-  > *References:* <br />
-   *For more about encondig methods, see the following link:* [All about Categorical Variable Encoding](https://towardsdatascience.com/all-about-categorical-variable-encoding-305f3361fd02)<br />
+  > *For more about encondig methods, see the following link:* [All about Categorical Variable Encoding](https://towardsdatascience.com/all-about-categorical-variable-encoding-305f3361fd02)<br />
   *For more about Categorial variable, see the following link:* [Categorical Variable](https://en.wikipedia.org/wiki/Categorical_variable)
 * Spliting the dataset into the **Training set** and **Test Set**:
   > In this step, we apply the Feature Scaling after splitting the data set into two other sets, which are: **Testing** and **Training**. This is because the Test data set is composed of new data, which has not yet been observed. Therefore, these cannot be mixed with the Training data set.<br />
@@ -82,7 +82,7 @@ In this stage of data Preprocessing, we will start a Notebook with the following
     <img src=".github/standardisation.png" alt="Standarlisation"/>
   </p>
 
-  >*References:*<br />
+  **References:**<br />
   [Feature Scaling and Normalisation in a nutshell](https://medium.com/@giorgosmyrianthous/feature-scaling-and-normalisation-in-a-nutshell-5319af86f89b)<br />
   [Euclidian Distance](https://en.wikipedia.org/wiki/Euclidean_distance)
 
@@ -127,6 +127,104 @@ Now, to better adjust this line, add the values of the red and green cross, then
   <img src=".github/find_the_best_fit_line.png" alt="How to find best fit line?" width="450"/>
 </p>
 
-References:<br />
+**References**:<br />
 [Simple linear regression](http://www.statstutor.ac.uk/resources/uploaded/slregression.pdf)<br />
 [Statistics II - Lesson 4. Simple linear regression](http://halweb.uc3m.es/esp/Personal/personas/aarribas/eng/docs/estII/tema4_eng.pdf)
+
+## Multiple Linear Regression
+
+*Multiple linear regression is used to estimate the relationship between two or more independent variables and one dependent variable.*
+
+You can use multiple linear regression when you want to know:
+
+* How strong the relationship is between two or more independent variables and one dependent variable (e.g. how rainfall, temperature, and amount of fertilizer added affect crop growth);
+* The value of the dependent variable at a certain value of the independent variables (e.g. the expected yield of a crop at certain levels of rainfall, temperature, and fertilizer addition).
+
+**Equation**:
+<p align="center">
+  <img src=".github/MLR_equation.png" alt="MLR Equation" width="400"/>
+</p>
+
+> * **y** = the predicted value of the dependent variable;
+> * **B0** = the y-intercept (value of y when all other parameters are set to 0);
+> * **B1*X1** = the regression coefficient (B1) of the first independent variable (X1) (a.k.a. the effect that increasing the value of the independent variable has on the predicted y value);
+> * **…** = do the same for however many independent variables you are testing;
+> * **Bn*Xn** = the regression coefficient of the last independent variable;
+> * **ε** (could have) = model error (a.k.a. how much variation there is in our estimate of y).
+
+### Aplication examples
+
+* The selling price of a house can depend on the desirability of the location, the number of bedrooms, the number of bathrooms, the year the house was built, the square footage of the lot and a number of other factors;
+* The height of a child can depend on the height of the mother, the height of the father, nutrition, and environmental factors.
+
+### Assumptions of multiple linear regression
+
+### Dummy Variables
+
+To understand how dummy variables work, let's take into account the information below:
+
+So basically the information that we have is the profit of each company or each startup and it's expenses with R&D, administration, marketing and the state in which it is located. Thus, on a given day, the Venture Capital fund wanted to know if there are any correlations between profit and the months spent in Administration, Marketing and R&D and also with the stage at which the company operates. They also want to predict profit, so profit is our dependent variable (**Green column**) and the rest of the columns (**Blue**) are all independent variables.
+
+So, we need to do a Multiple Linear Regression to get those answers. Our equation will be formed according to the indicated values, as we can see below:
+
+<p align="center">
+  <img src=".github/dummy_variables_table.png" alt="Dummy Variables Table"/>
+</p>
+
+*Allocating values in the equation:*
+
+<p align="center">
+  <img src=".github/MLR_equation_2.png" alt="MLR Equation 2"/>
+</p>
+
+After allocating all values, we come across the **State** column, which refers to a type of the **categorical variable** and in order to be able to add it to our equation, we need to create **Dummy Variables**. 
+
+To start the Dummy Variables creating, we need to through the State column and find all the different categories we have. In this case, we have **two**:
+
+<p align="center">
+  <img src=".github/dummy_variable_categories.png" alt="Dummy Variables Categories"/>
+</p>
+
+So for each category found, we need to create a new column for each one:
+
+<p align="center">
+  <img src=".github/dummy_variables_new_columns.png" alt="Dummy Variables New Columns"/>
+</p>
+
+In this way, we are **expanding** our dataset and here comes the fun part, in which we need to fill in these columns.
+
+For that, we need to find all the lines where the state of **New York** is present and add the number **1** in the corresponding lines, in the others put **0**:
+
+<p align="center">
+  <img src=".github/dummy_variables_filled_1.png" alt="Dummy Variables Filled 1"/>
+</p>
+
+For **California**, we need to do **same thing**:
+
+<p align="center">
+  <img src=".github/dummy_variables_filled_2.png" alt="Dummy Variables Filled 2"/>
+</p>
+
+This way we finish our changes and our data set has these new columns that are called **Dummy Variables**.
+
+Now it's easy to proceed with the construction of our Multiple Linear Regression model. Instead of using the old **States** column, we will use our new columns:
+
+<p align="center">
+  <img src=".github/dummy_variables_filled_3.png" alt="Dummy Variables Filled 3"/>
+</p>
+
+In fact, we will only need to use the **New York** column, as it already provides us with all the information we need, as it's enough to say immediately if the company is located in New York **(1)**, if it's not in California **(0)**. But it is important to note that **all information in the data set WILL BE PRESERVED**:
+
+<p align="center">
+  <img src=".github/dummy_variables_only_new_york.png" alt="Dummy Variables Only New York"/>
+</p>
+
+Finally, our euqation will look like this:
+
+ <p align="center">
+  <img src=".github/MLR_equation_3.png" alt="MLR Equation 3"/>
+</p>
+
+**References**:<br />
+[An introduction to multiple linear regression](https://www.scribbr.com/statistics/multiple-linear-regression/)<br />
+[Multiple Linear Regression](http://mezeylab.cb.bscb.cornell.edu/labmembers/documents/supplement%205%20-%20multiple%20regression.pdf)
