@@ -1,23 +1,32 @@
-### Summary
+### 0.0.1. Summary
 
-* [Applications of Machine Learning](#applications-of-machine-learning)
-* [Difference between AI, ML and DL](#difference-between-ai-ml-and-dl)
-  * [Articial Intelligence](###artificial-intelligence)
-  * [Machine Learning](###machine-learning)
-  * [Deep Learning](###deep-learning)
-* [Data Preprocessing](#data-preprocessing-in-python)
-* [Regression](#regression)
-  * [Simple Linear Regression](#simple-linear-regression)
-  * [Multiple Linear Regression](#multiple-linear-regression)
+- [1. Applications of `Machine Learning`](#1-applications-of-machine-learning)
+- [2. Difference between AI, ML and DL](#2-difference-between-ai-ml-and-dl)
+    - [2.0.1. **Artificial Intelligence**](#201-artificial-intelligence)
+    - [2.0.2. **Machine Learning**](#202-machine-learning)
+    - [2.0.3. **Deep Learning**](#203-deep-learning)
+- [3. Data Preprocessing](#3-data-preprocessing)
+- [4. Regression](#4-regression)
+  - [4.1. Simple Linear Regression](#41-simple-linear-regression)
+    - [4.1.1. Definition](#411-definition)
+    - [4.1.2. Aplication examples](#412-aplication-examples)
+    - [4.1.3. How to find the best fit line?](#413-how-to-find-the-best-fit-line)
+  - [4.2. Multiple Linear Regression](#42-multiple-linear-regression)
+    - [4.2.1. Definition](#421-definition)
+    - [4.2.2. Aplication examples](#422-aplication-examples)
+    - [4.2.3. Assumptions of multiple linear regression](#423-assumptions-of-multiple-linear-regression)
+    - [4.2.4. Dummy Variables](#424-dummy-variables)
+    - [4.2.5. Dummy Variable Trap](#425-dummy-variable-trap)
 
 
-# Applications of `Machine Learning`
+
+# 1. Applications of `Machine Learning`
 
 Currently, almost everything we use is already using **Machine Learning (ML)** in some way, for example: whenever you post on **Facebook**, it already knows who your friends are in the photo and automatically tags them, this implies another application which is **Recognition Facial** that is being widely adopted. This is an example that almost everyone has seen, but we can mention others, such as: the **X-Box Kinect**, which analyzes your actions and reproduces them in the game you are playing and the name of the algorithm used in this scenario isc alled the **Forest Random**, we can also quote **Netflix** with it's system of recommendations for films and series, which learns from the informations provided, such as the time you spend watching a specific program, which were marked with like or deslike, **Virtual Stores** also use the Machine Learning **to offer new products** according to your consumption or visualizations, the keyboard of your SmartPhone learns while you type your messages or surveys, **Virtual Reality (VR)** glasses, Machine Learning is also use to save lives, helping to detect cancer and making new drugs, vaccines and other things that would take a long time if only humans wre analyzed.
 
 I can cite many other examples, but I suggest paying close attention to the behavior of the tools you use on a daily basis and if you notice that it seems to know you very well or that it makes very accurate predictions, this will probably indicate that this tool is using Machine Learning in some part of it's functioning.
 
-# Difference between AI, ML and DL
+# 2. Difference between AI, ML and DL
 
 There is often a difficulty in understanding the differences between Artificial Intelligence (AI), Machine Learning (ML) and Deep Learning (DL). Terms that are not recent, but that have gained greater popularity in the last decade.
 
@@ -25,7 +34,7 @@ There is often a difficulty in understanding the differences between Artificial 
   <img src=".github/difference_between_AI_ML_and_DL.png" alt="Difference between AI, ML and DL"/>
 </p>
   
-### **Artificial Intelligence:**
+### 2.0.1. **Artificial Intelligence**
 
 Artificial Intelligence is a term that was created in 1955 and that can be interpreted basically as the name suggests, that is, **the incorporation of human intelligence in machines**.
 
@@ -33,13 +42,13 @@ So, whenever a machine performs a task, which has been implemented with a set of
 
 If it is still difficult to observe this, we can cite some examples very close to us, such as: our fridges, washing machines, SmartPhones, car or house alarms, among thousands of other devices that we use in our day today.
 
-### **Machine Learning:**
+### 2.0.2. **Machine Learning**
 
 Again, as the name suggests, it is the ability of machines to learn and we can interpret this as a way of instructing machines with teachings so that they can perform specific tasks.
 
 We can do this by providing data so that the machine understands the patterns (training) and from there makes decisions based on what it has learned. It is like teaching certain taks to a child, you explain to him how to perform a certain task with examples (data), he performs that task several times to really learn (training) and, depending on this performance, you help him so that he can perform the task more efficiently (accurately).
 
-### **Deep Learning:**
+### 2.0.3. **Deep Learning**
 
 Deep Learning is a subset of the Machine Learning universe, we can interpret it as the next evolution of Machine Learning itself.
 
@@ -49,7 +58,7 @@ Just as our brain identifies patterns and classifies them, Deep Learning algorit
 
 Comparing the functioning of Deep Learning and Machine Learning, we can see that while the DL can discover the features that must be applied in a classification, the ML needs that these features are provided manually.
 
-# Data Preprocessing
+# 3. Data Preprocessing
 
 In this stage of data Preprocessing, we will start a Notebook with the following approaches:
 
@@ -86,24 +95,22 @@ In this stage of data Preprocessing, we will start a Notebook with the following
   [Feature Scaling and Normalisation in a nutshell](https://medium.com/@giorgosmyrianthous/feature-scaling-and-normalisation-in-a-nutshell-5319af86f89b)<br />
   [Euclidian Distance](https://en.wikipedia.org/wiki/Euclidean_distance)
 
-# Regression
+# 4. Regression
 
-## Simple Linear Regression
+## 4.1. Simple Linear Regression
 
 [Notebook code](https://github.com/Leonardofreua/Machine-Learning-A-Z-Python-and-R-in-Data-Science/blob/master/Regression/Simple%20Linear%20Regression/Python/simple_linear_regression.ipynb) | [R code](https://github.com/Leonardofreua/Machine-Learning-A-Z-Python-and-R-in-Data-Science/blob/master/Regression/Simple%20Linear%20Regression/R/simple_linear_regression.R)
 
 ---
 **Topics covered:**
 
-1 - Definition
-
-2 - Aplication examples of SLR
-
-3 - How to find the best fit line?
+- [4.1.1. Definition](#411-definition)
+- [4.1.2. Aplication examples](#412-aplication-examples)
+- [4.1.3. How to find the best fit line?](#413-how-to-find-the-best-fit-line)
 
 ---
 
-### Definition
+### 4.1.1. Definition
 
 *Is a statiscal method for obtaining a formula to predict values of one variable from another where there is a casual relationship between the two variables.*
 
@@ -122,7 +129,7 @@ Simple Linear Regression makes predictions of the **dependent variable (Y)** bas
 
 > **Random Error term (ε)** is used to represent **Irreducible Errors**, some of which are inherent to the nature of the problem.
 
-### Aplication examples
+### 4.1.2. Aplication examples
 
 * Study how the parent's height may influence their children's height;
 * Estimate thhe price of a house depending on it's surface;
@@ -130,7 +137,7 @@ Simple Linear Regression makes predictions of the **dependent variable (Y)** bas
 * Approximate the grades attained in a subject as a function of the number of study hours per week;
 * Forecast the execution time of a program depending on the speed of the processor.
 
-### How to find the best fit line?
+### 4.1.3. How to find the best fit line?
 
 The center line represents the best fit line or the Simple Linear regression model. Then, the **Red Cross** marked in the image, represents a person who has for example: 10 years of experience and earns the US $ 100,000. Already, the **Green Cross** shows us where this person should be acordding to his experience. Therefore, the Green Line between the two crosses is the difference between what he is really earning and what he should be.
 
@@ -144,22 +151,20 @@ Now, to better adjust this line, add the values of the red and green cross, then
 [Simple linear regression](http://www.statstutor.ac.uk/resources/uploaded/slregression.pdf)<br />
 [Statistics II - Lesson 4. Simple linear regression](http://halweb.uc3m.es/esp/Personal/personas/aarribas/eng/docs/estII/tema4_eng.pdf)
 
-## Multiple Linear Regression
+## 4.2. Multiple Linear Regression
 
 ---
 **Topics covered:**
 
-1 - Definition
-
-2 - Aplication examples of SLR
-
-3 - Assumptions of multiple linear regression
-
-4 - Dummy Variables
+- [4.2.1. Definition](#421-definition)
+- [4.2.2. Aplication examples](#422-aplication-examples)
+- [4.2.3. Assumptions of multiple linear regression](#423-assumptions-of-multiple-linear-regression)
+- [4.2.4. Dummy Variables](#424-dummy-variables)
+- [4.2.5. Dummy Variable Trap](#425-dummy-variable-trap)
 
 ---
 
-### Definition
+### 4.2.1. Definition
 
 *Multiple linear regression is used to estimate the relationship between two or more independent variables and one dependent variable.*
 
@@ -180,12 +185,12 @@ You can use multiple linear regression when you want to know:
 > * **Bn*Xn** = the regression coefficient of the last independent variable;
 > * **ε** (could have) = model error (a.k.a. how much variation there is in our estimate of y).
 
-### Aplication examples
+### 4.2.2. Aplication examples
 
 * The selling price of a house can depend on the desirability of the location, the number of bedrooms, the number of bathrooms, the year the house was built, the square footage of the lot and a number of other factors;
 * The height of a child can depend on the height of the mother, the height of the father, nutrition, and environmental factors.
 
-### Assumptions of multiple linear regression
+### 4.2.3. Assumptions of multiple linear regression
 
 * **Homogeneity of variance (homoscedasticity)**: the size of the error in our prediction doesn’t change significantly across the values of the independent variable.
 
@@ -203,7 +208,7 @@ You can use multiple linear regression when you want to know:
 
 * **Linearity**: the line of best fit through the data points is a straight line, rather than a curve or some sort of grouping factor.
 
-### Dummy Variables
+### 4.2.4. Dummy Variables
 
 To understand how dummy variables work, let's take into account the information below:
 
@@ -263,11 +268,50 @@ In fact, we will only need to use the **New York** column, as it already provide
   <img src=".github/dummy_variables_only_new_york.png" alt="Dummy Variables Only New York"/>
 </p>
 
-Finally, our euqation will look like this:
+Finally, our equation will look like this:
 
- <p align="center">
+<p align="center">
   <img src=".github/MLR_equation_3.png" alt="MLR Equation 3"/>
 </p>
+
+In [Dummy Variable Trap](#425-dummy-variable-trap) we wil explain the reason for not using the column for the state California.
+
+### 4.2.5. Dummy Variable Trap
+
+The Dummy Variable trap is a scenario in which the independent variables are multicollinear — a scenario in which two or more variables are highly correlated; in simple terms one variable can be predicted from the others.
+
+In order not to fall into this trap, we will always declare in our equation, **one less** Dummy Variable (n - 1) than the number of existing categories (n).
+
+[Using the previous scenario](#424-dummy-variables) where there were the **New York** and **California** columns, we don't need the California column, because with it present in our equation, **we would have duplicate categories**. Therefore, only the **New York** column is enough.
+
+**Another example:**
+
+If we had one more state in our dataset, for example: **Missouri**. After that, our dataset would look like this:
+
+| New York | California | Missouri |
+| :------- | :--------: | -------: |
+| 1        |     0      |        0 |
+| 0        |     1      |        1 |
+| 0        |     1      |        0 |
+| 1        |     0      |        0 |
+| 0        |     0      |        1 |
+
+Analysing the table above, we can see that the **California** and **Missouri** columns provide us with all necessary information. So we can disregard the column referring to **New York**:
+
+| California | Missouri |
+| :--------- | -------: |
+| 0          |        0 |
+| 1          |        1 |
+| 1          |        0 |
+| 0          |        0 |
+| 0          |        1 |
+
+And our equation  would be presented as follows:
+
+<p align="center">
+  <img src=".github/MLR_equation_4.png" alt="MLR Equation 4"/>
+</p>
+
 
 **References**:<br />
 [An introduction to multiple linear regression](https://www.scribbr.com/statistics/multiple-linear-regression/)<br />
