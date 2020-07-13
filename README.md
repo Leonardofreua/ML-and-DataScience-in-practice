@@ -321,7 +321,7 @@ Due to the possibility that there are many variables involved in our model, thes
 > **Note**:
 > SL = [Statistical Significance](https://towardsdatascience.com/statistical-significance-hypothesis-testing-the-normal-curve-and-p-values-93274fa32687) 
 
-* **Backward Elimination**:  
+* **Backward Elimination** ([R example](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Regression/Multiple%20Linear%20Regression/R/backward_elimination.R)):  
   > **Step 1**: Select a significance level to stay in the model (e.g. SL = 0.05);
 
   > **Step 2**: Fit the full mode with all possible predictors;
