@@ -16,7 +16,6 @@ split = sample.split(dataset$Profit, SplitRatio = 0.8)
 training_set = subset(dataset, split == TRUE)
 test_set = subset(dataset, split == FALSE)
 
-# Feature Scaling
-# training_set[, 2:3] = scale(training_set[, 2:3])
-# test_set[, 2:3] = scale(test_set[, 2:3])
-
+# Fitting Multiple Linear Regression to the Training set
+# . (dot) = R.D.Spend + Administration + Marketing.Spend + State
+regressor = lm(formula = Profit ~ ., data = training_set)
