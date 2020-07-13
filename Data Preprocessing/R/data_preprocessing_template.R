@@ -5,7 +5,7 @@
 # setwd(dir)
 
 # Importing the dataset
-dataset = read.csv("Data.csv")
+dataset = read.csv('../../Datasets/Data.csv')
 
 # Taking care of missing data
 dataset$Age =  ifelse(is.na(dataset$Age),
