@@ -323,7 +323,7 @@ Due to the possibility that there are many variables involved in our model, thes
 
 * **Backward Elimination** ([R example](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Regression/Multiple%20Linear%20Regression/R/backward_elimination.R)):  
   > **Step 1**: Select a significance level to stay in the model (e.g. SL = 0.05);
-
+  >
   > **Step 2**: Fit the full mode with all possible predictors;
   >
   > **Step 3**: Consider the predictor with the **highest** P-Value. If P > SL, go to **STEP 4**, otherwise go to FIN (*Your model is ready*);
