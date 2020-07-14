@@ -341,7 +341,7 @@ Due to the possibility that there are many variables involved in our model, thes
   >
   > **Step 4**: Consider the predictor with the <u>lowest</u> P-value. If P > SL, go to **STEP 3**, otherwise go to FIN (*Keep the previous model*).
 
- * **Bidirectional Elimination**:
+* **Bidirectional Elimination**:
   > **Step 1**: Select a significance level to enter and to stay in the model e.g.: *SL***ENTER** = 0.05, *SL***STAY** = 0.05;
   >
   > **Step 2**: Perform the next step of Forward Selection (new variabes must have: P < *SL***ENTER** to enter);
