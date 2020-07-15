@@ -20,6 +20,7 @@
     - [4.2.4. Dummy Variables](#424-dummy-variables)
     - [4.2.5. Dummy Variable Trap](#425-dummy-variable-trap)
     - [4.2.6. Building a Model with the right methods](#426-building-a-model-with-the-right-methods)
+  - [4.3. Polynomial Linear Regression](#43-polynomial-linear-regression)
 
 # 1. Applications of `Machine Learning`
 
@@ -357,3 +358,25 @@ Due to the possibility that there are many variables involved in our model, thes
 [An introduction to multiple linear regression](https://www.scribbr.com/statistics/multiple-linear-regression/)<br />
 [Multiple Linear Regression](http://mezeylab.cb.bscb.cornell.edu/labmembers/documents/supplement%205%20-%20multiple%20regression.pdf)<br />
 [Statistical Significance Explained](https://towardsdatascience.com/statistical-significance-hypothesis-testing-the-normal-curve-and-p-values-93274fa32687)
+
+## 4.3. Polynomial Linear Regression
+
+---
+**Topics covered:**
+
+- [4.3.1. Definition](#431-definition)
+
+---
+
+### 4.3.1. Definition
+
+Polynomial Linear Regression is very similar to [Simple Liner Regression](#41-simple-linear-regression). However, we use it when our data is correlated, but the relationship does not seem **linear**. So to bring more precision, we apply Polynomial Linear Regression.
+
+**Equation:**
+<p align="center">
+  <img src=".github/PLR_equation.png" alt="PLR Equation"/>
+</p>
+
+**References**:<br />
+[Introdução à Regressão Linear e Regressão Polinomial](https://towardsdatascience.com/introduction-to-linear-regression-and-polynomial-regression-f8adc96f31cb)
+[Polynomial regression](https://en.wikipedia.org/wiki/Polynomial_regression#Definition_and_example)
