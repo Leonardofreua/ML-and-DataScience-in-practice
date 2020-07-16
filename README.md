@@ -363,7 +363,7 @@ Due to the possibility that there are many variables involved in our model, thes
 
 ## 4.3. Polynomial Linear Regression
 
-[Notebook code]() | [R code]()
+[Notebook code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Regression/Polynomial%20Linear%20Regression/Python/polynomial_regression.ipynb) | [R code]()
 
 ---
 **Topics covered:**
@@ -380,10 +380,18 @@ Polynomial Linear Regression is very similar to [Simple Liner Regression](#41-si
 
 **Example:**
 
-<p align="center">
-  <img src=".github/PLR_plot_example.png" alt="PLR Plot Example"/>
+In this example, we have a Simple Linear Regression applied to a dataset that contains information in which this type of regression cannot **linearly** track the positions of the information.
 
-  <em>Font: Javapoint - [ML Polynomial Regression](https://www.javatpoint.com/machine-learning-polynomial-regression)</em>
+<p align="center">
+  <img src=".github/SLR_no_linear.png" alt="SLR no linear"/>
+</p>
+
+Below, we apply the Polynomial Linear Regression to obtain the plot adjusted to the data. That way, we can more accurately predict the information we want. 
+
+[*To view this plot with a **higher** and **smoother curve**, access the Notebook*](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Regression/Polynomial%20Linear%20Regression/Python/polynomial_regression.ipynb)
+
+<p align="center">
+  <img src=".github/PLR_adjusted_plot.png" alt="PLR adjusted plot"/>
 </p>
 
 **Equation:**
