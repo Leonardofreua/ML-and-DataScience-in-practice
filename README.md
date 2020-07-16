@@ -21,6 +21,8 @@
     - [4.2.5. Dummy Variable Trap](#425-dummy-variable-trap)
     - [4.2.6. Building a Model with the right methods](#426-building-a-model-with-the-right-methods)
   - [4.3. Polynomial Linear Regression](#43-polynomial-linear-regression)
+    - [4.3.2. Application examples](#432-application-examples)
+    - [4.3.3. Advantages and Disadvantages](#433-advantages-and-disadvantages)
 
 # 1. Applications of `Machine Learning`
 
@@ -126,7 +128,7 @@ Simple Linear Regression makes predictions of the **dependent variable (Y)** bas
 <p align="center">
   <img src=".github/SLR_equation.png" alt="SLR Equation"/>
 
-  <em>Font: [Simple linear regression Equation](https://rstudio-pubs-static.s3.amazonaws.com/401724_c38918314a8d479ab351f4f83a8fa284.html)</em>
+  <em>Font: rstudio-pubs-static - [Simple linear regression Equation](https://rstudio-pubs-static.s3.amazonaws.com/401724_c38918314a8d479ab351f4f83a8fa284.html)</em>
 </p>
 
 > **Random Error term (ε)** is used to represent **Irreducible Errors**, some of which are inherent to the nature of the problem.
@@ -208,7 +210,7 @@ You can use multiple linear regression when you want to know:
 <p align="center">
   <img src=".github/normality_assumption.png" alt="Normality Assumption"/>
 
-  <em>Font: [Going Deeper into Regression Analysis with Assumptions, Plots & Solutions](https://www.analyticsvidhya.com/blog/2016/07/deeper-regression-analysis-assumptions-plots-solutions/)</em>
+  <em>Font: Analytics Vidhya - [Going Deeper into Regression Analysis with Assumptions, Plots & Solutions](https://www.analyticsvidhya.com/blog/2016/07/deeper-regression-analysis-assumptions-plots-solutions/)</em>
 </p>
 
 * **Linearity**: the line of best fit through the data points is a straight line, rather than a curve or some sort of grouping factor.
@@ -361,10 +363,14 @@ Due to the possibility that there are many variables involved in our model, thes
 
 ## 4.3. Polynomial Linear Regression
 
+[Notebook code]() | [R code]()
+
 ---
 **Topics covered:**
 
 - [4.3.1. Definition](#431-definition)
+- [4.3.2. Application examples](#432-application-examples)
+- [4.3.3. Advantages and Disadvantages](#433-advantages-and-disadvantages)
 
 ---
 
@@ -372,11 +378,37 @@ Due to the possibility that there are many variables involved in our model, thes
 
 Polynomial Linear Regression is very similar to [Simple Liner Regression](#41-simple-linear-regression). However, we use it when our data is correlated, but the relationship does not seem **linear**. So to bring more precision, we apply Polynomial Linear Regression.
 
+**Example:**
+
+<p align="center">
+  <img src=".github/PLR_plot_example.png" alt="PLR Plot Example"/>
+
+  <em>Font: Javapoint - [ML Polynomial Regression](https://www.javatpoint.com/machine-learning-polynomial-regression)</em>
+</p>
+
 **Equation:**
 <p align="center">
   <img src=".github/PLR_equation.png" alt="PLR Equation"/>
 </p>
 
+### 4.3.2. Application examples
+
+* It is used to describe how diseases spread or pandemics and epidemics spread across territories;
+* We can also use Polynomial Regression to study population growth or decrease.
+
+### 4.3.3. Advantages and Disadvantages
+
+* **Advantages:**
+  > * Polynomial provides the best approximation of the relationship between the Dependent and Independent variable;
+  > * A broad range of function can be fit under it;
+  > * Polynomial basically fits a wide range of curvature.
+
+* **Disadvantages:**
+  > * The presence of one or two outliers in the data can seriously affect the results of the nonlinear analysis;
+  > * These are too sensitive to the outliers;
+  > * In addition, these are unfortunately fewer model validation tools for the detection of outliers in nonlinear regression than there are for linear regression.
+
 **References**:<br />
 [Introdução à Regressão Linear e Regressão Polinomial](https://towardsdatascience.com/introduction-to-linear-regression-and-polynomial-regression-f8adc96f31cb)<br />
+[Outlier](https://en.wikipedia.org/wiki/Outlier)<br />
 [Polynomial regression](https://en.wikipedia.org/wiki/Polynomial_regression#Definition_and_example)
