@@ -35,7 +35,7 @@ summary(regressor)
 
 # -- STEP 4 --
 
-# Removing the State, as it has the HIGHEST Statiscal Significance (Highest P-Value)
+# Removing the State, as it has the HIGHEST Statistical Significance (Highest P-Value)
 # ---- 6% (the limit is 5%) ----
 # State2  0.974 
 # State3  0.954
@@ -43,14 +43,14 @@ regressor = lm(formula = Profit ~ R.D.Spend + Administration + Marketing.Spend,
                data = training_set)
 summary(regressor)
 
-# Removing the Administration, as it has the HIGHEST Statiscal Significance (Highest P-Value)
+# Removing the Administration, as it has the HIGHEST Statistical Significance (Highest P-Value)
 # ---- 6% (the limit is 5%) ----
 # Administration  0.609
 regressor = lm(formula = Profit ~ R.D.Spend + Marketing.Spend, 
                data = training_set)
 summary(regressor)
 
-# Removing the Marketing Spend, as it has the HIGHEST Statiscal Significance (Highest P-Value)
+# Removing the Marketing Spend, as it has the HIGHEST Statistical Significance (Highest P-Value)
 # ---- 7% (the limit is 5%) ----
 # Marketing.Spend 0.0713
 regressor = lm(formula = Profit ~ R.D.Spend,data = training_set)

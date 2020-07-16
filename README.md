@@ -363,7 +363,7 @@ Due to the possibility that there are many variables involved in our model, thes
 
 ## 4.3. Polynomial Linear Regression
 
-[Notebook code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Regression/Polynomial%20Linear%20Regression/Python/polynomial_regression.ipynb) | [R code]()
+[Notebook code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Regression/Polynomial%20Linear%20Regression/Python/polynomial_regression.ipynb) | [R code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Regression/Polynomial%20Linear%20Regression/R/polynomial_regression.R)
 
 ---
 **Topics covered:**
