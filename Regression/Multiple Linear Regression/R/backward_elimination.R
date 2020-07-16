@@ -56,6 +56,10 @@ summary(regressor)
 regressor = lm(formula = Profit ~ R.D.Spend,data = training_set)
 summary(regressor)
 
+# to see this process done automatically, see the file 
+# automatic_backward_elimination.R located in the same 
+# folder as this script
+
 # --- FINAL OUTPUT ---
 # Coefficients:
 #              Estimate Std. Error t value Pr(>|t|)    
