@@ -94,7 +94,7 @@ In this stage of data Preprocessing, we will start a Notebook with the following
   </p>
 
   **References:**<br />
-  [Feature Scaling and Normalisation in a nutshell](https://medium.com/@giorgosmyrianthous/feature-scaling-and-normalisation-in-a-nutshell-5319af86f89b)
+  [Feature Scaling and Normalisation in a nutshell](https://medium.com/@giorgosmyrianthous/feature-scaling-and-normalisation-in-a-nutshell-5319af86f89b)<br />
   [Euclidian Distance](https://en.wikipedia.org/wiki/Euclidean_distance)
 
 # 4. Regression
@@ -150,7 +150,7 @@ Now, to better adjust this line, add the values of the red and green cross, then
 </p>
 
 **References**:<br />
-[Simple linear regression](http://www.statstutor.ac.uk/resources/uploaded/slregression.pdf)
+[Simple linear regression](http://www.statstutor.ac.uk/resources/uploaded/slregression.pdf)<br />
 [Statistics II - Lesson 4. Simple linear regression](http://halweb.uc3m.es/esp/Personal/personas/aarribas/eng/docs/estII/tema4_eng.pdf)
 
 ## 4.2. Multiple Linear Regression
@@ -355,8 +355,8 @@ Due to the possibility that there are many variables involved in our model, thes
   > **Step 4**: No new variables can enter and no old variables can exit, FIN (Your model is ready).
 
 **References**:<br />
-[An introduction to multiple linear regression](https://www.scribbr.com/statistics/multiple-linear-regression/)
-[Multiple Linear Regression](http://mezeylab.cb.bscb.cornell.edu/labmembers/documents/supplement%205%20-%20multiple%20regression.pdf)
+[An introduction to multiple linear regression](https://www.scribbr.com/statistics/multiple-linear-regression/)<br />
+[Multiple Linear Regression](http://mezeylab.cb.bscb.cornell.edu/labmembers/documents/supplement%205%20-%20multiple%20regression.pdf)<br />
 [Statistical Significance Explained](https://towardsdatascience.com/statistical-significance-hypothesis-testing-the-normal-curve-and-p-values-93274fa32687)
 
 ## 4.3. Polynomial Linear Regression
@@ -378,5 +378,5 @@ Polynomial Linear Regression is very similar to [Simple Liner Regression](#41-si
 </p>
 
 **References**:<br />
-[Introdução à Regressão Linear e Regressão Polinomial](https://towardsdatascience.com/introduction-to-linear-regression-and-polynomial-regression-f8adc96f31cb)
+[Introdução à Regressão Linear e Regressão Polinomial](https://towardsdatascience.com/introduction-to-linear-regression-and-polynomial-regression-f8adc96f31cb)<br />
 [Polynomial regression](https://en.wikipedia.org/wiki/Polynomial_regression#Definition_and_example)
