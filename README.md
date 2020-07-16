@@ -94,7 +94,7 @@ In this stage of data Preprocessing, we will start a Notebook with the following
   </p>
 
   **References:**<br />
-  [Feature Scaling and Normalisation in a nutshell](https://medium.com/@giorgosmyrianthous/feature-scaling-and-normalisation-in-a-nutshell-5319af86f89b)<br />
+  [Feature Scaling and Normalisation in a nutshell](https://medium.com/@giorgosmyrianthous/feature-scaling-and-normalisation-in-a-nutshell-5319af86f89b)
   [Euclidian Distance](https://en.wikipedia.org/wiki/Euclidean_distance)
 
 # 4. Regression
@@ -124,7 +124,7 @@ Simple Linear Regression makes predictions of the **dependent variable (Y)** bas
 
 **Equation**:
 <p align="center">
-  <img src=".github/SLR_equation.png" alt="SLR Equation" width="400"/>
+  <img src=".github/SLR_equation.png" alt="SLR Equation"/>
 
   <em>Font: [Simple linear regression Equation](https://rstudio-pubs-static.s3.amazonaws.com/401724_c38918314a8d479ab351f4f83a8fa284.html)</em>
 </p>
@@ -150,7 +150,7 @@ Now, to better adjust this line, add the values of the red and green cross, then
 </p>
 
 **References**:<br />
-[Simple linear regression](http://www.statstutor.ac.uk/resources/uploaded/slregression.pdf)<br />
+[Simple linear regression](http://www.statstutor.ac.uk/resources/uploaded/slregression.pdf)
 [Statistics II - Lesson 4. Simple linear regression](http://halweb.uc3m.es/esp/Personal/personas/aarribas/eng/docs/estII/tema4_eng.pdf)
 
 ## 4.2. Multiple Linear Regression
@@ -180,7 +180,7 @@ You can use multiple linear regression when you want to know:
 
 **Equation**:
 <p align="center">
-  <img src=".github/MLR_equation.png" alt="MLR Equation" width="400"/>
+  <img src=".github/MLR_equation.png" alt="MLR Equation" />
 </p>
 
 > * **y** = the predicted value of the dependent variable;
@@ -206,7 +206,7 @@ You can use multiple linear regression when you want to know:
 * **Normality**: Multple regression assumes that the residuals are normally distributed.
 
 <p align="center">
-  <img src=".github/normality_assumption.png" alt="Normality Assumption" width="450"/>
+  <img src=".github/normality_assumption.png" alt="Normality Assumption"/>
 
   <em>Font: [Going Deeper into Regression Analysis with Assumptions, Plots & Solutions](https://www.analyticsvidhya.com/blog/2016/07/deeper-regression-analysis-assumptions-plots-solutions/)</em>
 </p>
@@ -355,8 +355,8 @@ Due to the possibility that there are many variables involved in our model, thes
   > **Step 4**: No new variables can enter and no old variables can exit, FIN (Your model is ready).
 
 **References**:<br />
-[An introduction to multiple linear regression](https://www.scribbr.com/statistics/multiple-linear-regression/)<br />
-[Multiple Linear Regression](http://mezeylab.cb.bscb.cornell.edu/labmembers/documents/supplement%205%20-%20multiple%20regression.pdf)<br />
+[An introduction to multiple linear regression](https://www.scribbr.com/statistics/multiple-linear-regression/)
+[Multiple Linear Regression](http://mezeylab.cb.bscb.cornell.edu/labmembers/documents/supplement%205%20-%20multiple%20regression.pdf)
 [Statistical Significance Explained](https://towardsdatascience.com/statistical-significance-hypothesis-testing-the-normal-curve-and-p-values-93274fa32687)
 
 ## 4.3. Polynomial Linear Regression
