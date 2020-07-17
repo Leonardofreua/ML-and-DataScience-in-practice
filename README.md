@@ -27,6 +27,7 @@
   - [4.4. Support Vector Machine](#44-support-vector-machine)
     - [4.4.1. Definition](#441-definition)
     - [4.4.2. Application examples](#442-application-examples)
+    - [4.4.3. Hyperparameters of the SVM](#443-hyperparameters-of-the-svm)
 
 # 1. Applications of `Machine Learning`
 
@@ -436,6 +437,7 @@ Below, we apply the Polynomial Linear Regression to obtain the plot adjusted to 
 
 - [4.4.1. Definition](#441-definition)
 - [4.4.2. Application examples](#442-application-examples)
+- [4.4.3. Hyperparameters of the SVM](#443-hyperparameters-of-the-svm)
 
 ---
 
@@ -460,6 +462,16 @@ We will apply SVM in it's regression form, so in this scenario, we will call it 
 * Classification of satellite data like SAR data using supervised SVM;
 * Hand-written characters can be recognized using SVM;
 * The SVM algorithm has been widely applied in the biological and other sciences. They have been used to classify proteins with up to 90% of the compounds classified correctly. Permutation tests based on SVM weights have been suggested as a mechanism for interpretation of SVM models.
+
+### 4.4.3. Hyperparameters of the SVM
+
+There are some parameters that are important to know before starting the SVM application:
+
+* **Kernel:** There are [several types of Kernels](https://data-flair.training/blogs/svm-kernel-functions/) and they helps us find a hyperplane in the higher dimensional space without increasing the computational cost. Usually, the computational cost will increase if the dimension of the data increases. This increase in dimension is required when we are unable to find a separating hyperplane in a given dimension and are required to move in a higher dimension;
+
+* **Hyperplane:** This is basically a separating line between two data classes in SVM. But in Support Vector Regression, this is the line that will be used to predict the continuous output;
+
+* **Decision Boundary:** The decision boundary is the lines between the Hyperplane, where the positive classifications are located on one side and the negative ones on the other. This same concept of SVM will be applied in Support Vector Regression as well
 
 **Observation:** <u>This is a slightly more complex algorithm, so it is suggested to look at the references for more details on the functioning of SVM.</u>
 
