@@ -41,3 +41,17 @@ ggplot() +
     ggtitle('Truth or Bluff (Polynomial Regression)') +
     xlab('Level') +
     ylab('Salary')
+  
+  # Predicting a new result with Linear Regression
+  y_pred = predict(lin_reg, data.frame(Level = 6.5))
+  
+  # --- OUTPUT ---
+  # y_pred = 3303379
+  
+  # Predicting a new result with Polynomial Regression
+  y_pred = predict(poly_reg, data.frame(Level = 6.5,
+                                        Level2 = 6.5^2,
+                                        Level3 = 6.5^3,
+                                        Level4 = 6.5^4))
+  # --- OUTPUT ---
+  # y_pred = 158862
