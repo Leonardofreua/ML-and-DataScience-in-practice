@@ -21,8 +21,12 @@
     - [4.2.5. Dummy Variable Trap](#425-dummy-variable-trap)
     - [4.2.6. Building a Model with the right methods](#426-building-a-model-with-the-right-methods)
   - [4.3. Polynomial Linear Regression](#43-polynomial-linear-regression)
+    - [4.3.1. Definition](#431-definition)
     - [4.3.2. Application examples](#432-application-examples)
     - [4.3.3. Advantages and Disadvantages](#433-advantages-and-disadvantages)
+  - [4.4. Support Vector Machine](#44-support-vector-machine)
+    - [4.4.1. Definition](#441-definition)
+    - [4.4.2. Application examples](#442-application-examples)
 
 # 1. Applications of `Machine Learning`
 
@@ -422,3 +426,47 @@ Below, we apply the Polynomial Linear Regression to obtain the plot adjusted to 
 [Introdução à Regressão Linear e Regressão Polinomial](https://towardsdatascience.com/introduction-to-linear-regression-and-polynomial-regression-f8adc96f31cb)<br />
 [Outlier](https://en.wikipedia.org/wiki/Outlier)<br />
 [Polynomial regression](https://en.wikipedia.org/wiki/Polynomial_regression#Definition_and_example)
+
+## 4.4. Support Vector Machine
+
+[Notebook code]() | [R code]()
+
+---
+**Topics covered:**
+
+- [4.4.1. Definition](#441-definition)
+- [4.4.2. Application examples](#442-application-examples)
+
+---
+
+### 4.4.1. Definition
+
+Often not mentioned in courses, SVM is a supervised learning model with associated learning algorithms that analyze data user for **classification** and **regression** analysis.
+
+Basically, what an SVM does is find a line of separation, more commoly called a **Hyperplane** between data from two classes. This lines seeks to maximize the distance between the closest points in relation to each of the classes.
+
+<p align="center">
+  <img src=".github/SVR_hyperplane_chart.png" alt="SVR Hyperplane Chart"/>
+</p>
+
+We will apply SVM in it's regression form, so in this scenario, we will call it **Support Vector Regression (SRV)**. The principle behind SVR is the same as SVM, with only a few minor changes. As the results of the prediction are usually in real numbers, the SVR creates a **margin of tolerance (epsilon - ε)** that included other classifications besides those performed initially by the SVM.
+
+<p align="center">
+  <img src=".github/SVR_epsilon.png" alt="SVR Epsilon"/>
+</p>
+
+### 4.4.2. Application examples
+
+* Classification of satellite data like SAR data using supervised SVM;
+* Hand-written characters can be recognized using SVM;
+* The SVM algorithm has been widely applied in the biological and other sciences. They have been used to classify proteins with up to 90% of the compounds classified correctly. Permutation tests based on SVM weights have been suggested as a mechanism for interpretation of SVM models.
+
+**Observation:** <u>This is a slightly more complex algorithm, so it is suggested to look at the references for more details on the functioning of SVM.</u>
+
+**References:**<br />
+[Support Vector Machine - Regression (SVR)](https://www.saedsayad.com/support_vector_machine_reg.htm#:~:text=Support%20Vector%20Machine%20can%20also,only%20a%20few%20minor%20differences.)<br />
+[Support Vector Regression Tutorial for Machine Learning](https://www.analyticsvidhya.com/blog/2020/03/support-vector-regression-tutorial-for-machine-learning/)<br />
+[Support Vector Machine](https://en.wikipedia.org/wiki/Support_vector_machine#Definition)<br />
+[Supervised Classification of RADARSAT-2 Polarimetric Data for Different Land Features](https://arxiv.org/abs/1608.00501)<br />
+[Training Invariant Support Vector Machines](https://people.eecs.berkeley.edu/~malik/cs294/decoste-scholkopf.pdf)<br />
+[Analytic estimation of statistical significance maps for support vector machine based multi-variate image analysis and classification](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3767485/)<br />
