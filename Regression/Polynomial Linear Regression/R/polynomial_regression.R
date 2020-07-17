@@ -1,5 +1,8 @@
 # Polynomial Regression
 
+# As our dataset has only 10 records, we won't create a test division, 
+# we will only have a single set to be trained.
+
 # Importing the dataset
 dataset = read.csv('../../../Datasets/Position_Salaries.csv')
 dataset = dataset[2:3]
