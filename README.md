@@ -509,7 +509,7 @@ The Decision Tree can build **Regression** and **Classification** models. A data
 The resulting Tree (obtained by applying algorithms like [CART](https://machinelearningmastery.com/classification-and-regression-trees-for-machine-learning/) and [ID3](https://en.wikipedia.org/wiki/ID3_algorithm#:~:text=In%20decision%20tree%20learning%2C%20ID3,and%20natural%20language%20processing%20domains.)) which will be later used to predict the outcomes:
 
 <p align="center">
-  <img src=".github/decision_tree_generated.png" alt="Decision Tree Generated"/>
+  <img src=".github/decision_tree_generated.png" alt="Decision Tree Generated" width="650"/>
 </p>
 
 ### 4.5.2. Advantage and Disadvantages
