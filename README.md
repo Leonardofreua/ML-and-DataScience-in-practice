@@ -71,7 +71,7 @@ Comparing the functioning of Deep Learning and Machine Learning, we can see that
 
 In this stage of data Preprocessing, we will start a Notebook with the following approaches:
 
-[Notebook code](https://github.com/Leonardofreua/Machine-Learning-A-Z-Python-and-R-in-Data-Science/blob/master/Data%20Preprocessing/Python/data_preprocessing_tools.ipynb) | [R code](https://github.com/Leonardofreua/Machine-Learning-A-Z-Python-and-R-in-Data-Science/blob/master/Data%20Preprocessing/R/data_preprocessing_template.r)
+[:snake: Notebook code](https://github.com/Leonardofreua/Machine-Learning-A-Z-Python-and-R-in-Data-Science/blob/master/Data%20Preprocessing/Python/data_preprocessing_tools.ipynb) | [:chart_with_upwards_trend: R code](https://github.com/Leonardofreua/Machine-Learning-A-Z-Python-and-R-in-Data-Science/blob/master/Data%20Preprocessing/R/data_preprocessing_template.r)
 
 * Importing the Libraries
 * Importing the Dataset
@@ -110,10 +110,10 @@ In this stage of data Preprocessing, we will start a Notebook with the following
 
 ## 4.1. Simple Linear Regression
 
-[Notebook code](https://github.com/Leonardofreua/Machine-Learning-A-Z-Python-and-R-in-Data-Science/blob/master/Regression/Simple%20Linear%20Regression/Python/simple_linear_regression.ipynb) | [R code](https://github.com/Leonardofreua/Machine-Learning-A-Z-Python-and-R-in-Data-Science/blob/master/Regression/Simple%20Linear%20Regression/R/simple_linear_regression.R)
+[:snake: Notebook code](https://github.com/Leonardofreua/Machine-Learning-A-Z-Python-and-R-in-Data-Science/blob/master/Regression/Simple%20Linear%20Regression/Python/simple_linear_regression.ipynb) | [:chart_with_upwards_trend: R code](https://github.com/Leonardofreua/Machine-Learning-A-Z-Python-and-R-in-Data-Science/blob/master/Regression/Simple%20Linear%20Regression/R/simple_linear_regression.R)
 
 ---
-**Topics covered:**
+**:pushpin: Topics covered:**
 
 - [4.1.1. Definition](#411-definition)
 - [4.1.2. Aplication examples](#412-aplication-examples)
@@ -164,10 +164,10 @@ Now, to better adjust this line, add the values of the red and green cross, then
 
 ## 4.2. Multiple Linear Regression
 
-[Notebook code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Regression/Multiple%20Linear%20Regression/Python/multiple_linear_regression.ipynb) | [R code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Regression/Multiple%20Linear%20Regression/R/multiple_linear_regression.R)
+[:snake: Notebook code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Regression/Multiple%20Linear%20Regression/Python/multiple_linear_regression.ipynb) | [:chart_with_upwards_trend: R code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Regression/Multiple%20Linear%20Regression/R/multiple_linear_regression.R)
 
 ---
-**Topics covered:**
+**:pushpin: Topics covered:**
 
 - [4.2.1. Definition](#421-definition)
 - [4.2.2. Aplication examples](#422-aplication-examples)
@@ -370,10 +370,10 @@ Due to the possibility that there are many variables involved in our model, thes
 
 ## 4.3. Polynomial Linear Regression
 
-[Notebook code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Regression/Polynomial%20Linear%20Regression/Python/polynomial_regression.ipynb) | [R code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Regression/Polynomial%20Linear%20Regression/R/polynomial_regression.R)
+[:snake: Notebook code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Regression/Polynomial%20Linear%20Regression/Python/polynomial_regression.ipynb) | [:chart_with_upwards_trend: R code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Regression/Polynomial%20Linear%20Regression/R/polynomial_regression.R)
 
 ---
-**Topics covered:**
+**:pushpin: Topics covered:**
 
 - [4.3.1. Definition](#431-definition)
 - [4.3.2. Application examples](#432-application-examples)
@@ -430,10 +430,10 @@ Below, we apply the Polynomial Linear Regression to obtain the plot adjusted to 
 
 ## 4.4. Support Vector Machine
 
-[Notebook code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Regression/Support%20Vector%20Regression%20(SVR)/Pyhton/support_vector_regression.ipynb) | [R code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Regression/Support%20Vector%20Regression%20(SVR)/R/support_vector_regression.R)
+[:snake: Notebook code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Regression/Support%20Vector%20Regression%20(SVR)/Pyhton/support_vector_regression.ipynb) | [:chart_with_upwards_trend: R code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Regression/Support%20Vector%20Regression%20(SVR)/R/support_vector_regression.R)
 
 ---
-**Topics covered:**
+**:pushpin: Topics covered:**
 
 - [4.4.1. Definition](#441-definition)
 - [4.4.2. Application examples](#442-application-examples)
