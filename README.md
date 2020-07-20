@@ -69,9 +69,11 @@ Comparing the functioning of Deep Learning and Machine Learning, we can see that
 
 # 3. Data Preprocessing
 
-In this stage of data Preprocessing, we will start a Notebook with the following approaches:
-
 [:snake: Notebook code](https://github.com/Leonardofreua/Machine-Learning-A-Z-Python-and-R-in-Data-Science/blob/master/Data%20Preprocessing/Python/data_preprocessing_tools.ipynb) | [:chart_with_upwards_trend: R code](https://github.com/Leonardofreua/Machine-Learning-A-Z-Python-and-R-in-Data-Science/blob/master/Data%20Preprocessing/R/data_preprocessing_template.r)
+
+---
+
+In this stage of data Preprocessing, we will start a Notebook with the following approaches:
 
 * Importing the Libraries
 * Importing the Dataset
