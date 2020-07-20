@@ -28,6 +28,9 @@
     - [4.4.1. Definition](#441-definition)
     - [4.4.2. Application examples](#442-application-examples)
     - [4.4.3. Hyperparameters of the SVM](#443-hyperparameters-of-the-svm)
+  - [4.5. Decision Tree Regression](#45-decision-tree-regression)
+    - [4.5.1. Definition](#451-definition)
+    - [4.5.2. Advantage and Disadvantages](#452-advantage-and-disadvantages)
 
 # 1. Applications of `Machine Learning`
 
@@ -484,3 +487,60 @@ There are some parameters that are important to know before starting the SVM app
 [Supervised Classification of RADARSAT-2 Polarimetric Data for Different Land Features](https://arxiv.org/abs/1608.00501)<br />
 [Training Invariant Support Vector Machines](https://people.eecs.berkeley.edu/~malik/cs294/decoste-scholkopf.pdf)<br />
 [Analytic estimation of statistical significance maps for support vector machine based multi-variate image analysis and classification](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3767485/)<br />
+
+## 4.5. Decision Tree Regression
+
+[:snake: Notebook code]() | [:chart_with_upwards_trend: R code]()
+
+---
+**:pushpin: Topics covered:**
+
+- [4.5.1. Definition](#451-definition)
+- [4.5.2. Advantage and Disadvantages](#452-advantage-and-disadvantages)
+
+---
+
+### 4.5.1. Definition
+
+The Decision Tree can build **Regression** and **Classification** models. A data set is divided into smaller and smaller subsets, in parallel to that, an associated decision tree is developed incrementally.
+
+<p align="center">
+  <img src=".github/decision_tree_splitting.png" alt="Decision Tree Splitting"/>
+</p>
+
+The resulting Tree (obtained by applying algorithms like [CART](https://machinelearningmastery.com/classification-and-regression-trees-for-machine-learning/) and [ID3](https://en.wikipedia.org/wiki/ID3_algorithm#:~:text=In%20decision%20tree%20learning%2C%20ID3,and%20natural%20language%20processing%20domains.)) which will be later used to predict the outcomes:
+
+<p align="center">
+  <img src=".github/decision_tree_generated.png" alt="Decision Tree Generated"/>
+</p>
+
+### 4.5.2. Advantage and Disadvantages
+
+* **Advantages:**
+  > * It can be used for both Classification and Regression problems;
+  > * Easy to Understand, Interpret, Visualise;
+  > * Useful in Data exploration:
+  >>  <em>Decision tree is one of the fastest way to identify most significant variables and relation between two or more variables. With the help of decision trees, we can create new variables / features that has better power to predict target variable. You can refer article ([Trick to enhance power of regression model](https://www.analyticsvidhya.com/blog/2013/10/trick-enhance-power-regression-model-2/)) for one such trick.  It can also be used in data exploration stage.</em>
+  > * Less data preparation required;
+  > * Data type is not a constraint:
+  >> <em>It can handle both numerical and categorical variables.</em>
+  > * Non Parametric Method:
+  >> Decision tree is considered to be a non-parametric method. This means that decision trees have no assumptions about the space distribution and the classifier structure.
+  > * Can capture Nonlinear relationships.
+
+* **Disadvantages:**
+  > * Over fitting;
+  > * Not fit for continuous variables:
+  >> While working with continuous numerical variables, decision tree looses information when it categorizes variables in different categories.
+  > * Cannot extrapolate;
+  > * Decision trees can be unstable:
+  >> Small variations in the data might result in a completely different tree being generated. This is called [variance](https://towardsdatascience.com/balancing-bias-and-variance-to-control-errors-in-machine-learning-16ced95724db), which needs to be lowered by methods like bagging and [boosting](https://towardsdatascience.com/boosting-the-accuracy-of-your-machine-learning-models-f878d6a2d185).
+  > * No Guarantee to return the globally optimal decision tree:
+  >> This can be mitigated by training multiple trees, where the features and samples are randomly sampled with replacement.
+
+**See:** [Entropy](https://towardsdatascience.com/entropy-how-decision-trees-make-decisions-2946b9c18c8)
+
+**References:**<br />
+[Decision Tree - Regression](https://saedsayad.com/decision_tree_reg.htm)<br />
+[Decision Tree Regressor explained in depth](https://gdcoder.com/decision-tree-regressor-explained-in-depth/)<br />
+[Entropy: How Decision Trees Make Decisions](https://towardsdatascience.com/entropy-how-decision-trees-make-decisions-2946b9c18c8)
