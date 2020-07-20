@@ -430,7 +430,7 @@ Below, we apply the Polynomial Linear Regression to obtain the plot adjusted to 
 
 ## 4.4. Support Vector Machine
 
-[Notebook code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Regression/Support%20Vector%20Regression%20(SVR)/Pyhton/support_vector_regression.ipynb) | [R code]()
+[Notebook code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Regression/Support%20Vector%20Regression%20(SVR)/Pyhton/support_vector_regression.ipynb) | [R code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Regression/Support%20Vector%20Regression%20(SVR)/R/support_vector_regression.R)
 
 ---
 **Topics covered:**
