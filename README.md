@@ -531,10 +531,8 @@ The resulting Tree (obtained by applying algorithms like [CART](https://machinel
   > * Not fit for continuous variables:
   >> While working with continuous numerical variables, decision tree looses information when it categorizes variables in different categories.
   > * Cannot extrapolate;
-  > * Decision trees can be unstable:
-  >> Small variations in the data might result in a completely different tree being generated. This is called [variance](https://towardsdatascience.com/balancing-bias-and-variance-to-control-errors-in-machine-learning-16ced95724db), which needs to be lowered by methods like bagging and [boosting](https://towardsdatascience.com/boosting-the-accuracy-of-your-machine-learning-models-f878d6a2d185).
-  > * No Guarantee to return the globally optimal decision tree:
-  >> This can be mitigated by training multiple trees, where the features and samples are randomly sampled with replacement.
+  > * Decision trees can be unstable.
+  > * No Guarantee to return the globally optimal decision tree.
 
 **See:** [Entropy](https://towardsdatascience.com/entropy-how-decision-trees-make-decisions-2946b9c18c8)
 
