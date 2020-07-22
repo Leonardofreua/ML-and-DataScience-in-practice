@@ -506,8 +506,9 @@ The Decision Tree can build **Regression** and **Classification** models; in the
   <img src=".github/decision_tree_splitting.png" alt="Decision Tree Splitting"/>
 </p>
 
+<h4 align="center">Non-continuous model example</h4>
+
 <p align="center">
-  <h4>Non-continuous model example</h4>
   <img src=".github/non_continuous_model.png" alt="Non-continous model example"/>
 </p>
 
