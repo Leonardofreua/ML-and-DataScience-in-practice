@@ -488,7 +488,7 @@ There are some parameters that are important to know before starting the SVM app
 
 ## 4.5. Decision Tree Regression
 
-[:snake: Notebook code]() | [:chart_with_upwards_trend: R code]()
+[:snake: Notebook code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Regression/Decision%20Tree%20Regression/Python/decision_tree_regression.ipynb) | [:chart_with_upwards_trend: R code]()
 
 ---
 **:pushpin: Topics covered:**
