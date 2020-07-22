@@ -500,10 +500,15 @@ There are some parameters that are important to know before starting the SVM app
 
 ### 4.5.1. Definition
 
-The Decision Tree can build **Regression** and **Classification** models. A data set is divided into smaller and smaller subsets, in parallel to that, an associated decision tree is developed incrementally.
+The Decision Tree can build **Regression** and **Classification** models; in the case of Regression, it forms <ins>**non-continuous models**</ins>. A data set is divided into smaller and smaller subsets, in parallel to that, an associated decision tree is developed incrementally.
 
 <p align="center">
   <img src=".github/decision_tree_splitting.png" alt="Decision Tree Splitting"/>
+</p>
+
+<p align="center">
+  <h4>Non-continuous model example</h4>
+  <img src=".github/non_continuous_model.png" alt="Non-continous model example"/>
 </p>
 
 The resulting Tree (obtained by applying algorithms like [CART](https://machinelearningmastery.com/classification-and-regression-trees-for-machine-learning/) and [ID3](https://en.wikipedia.org/wiki/ID3_algorithm#:~:text=In%20decision%20tree%20learning%2C%20ID3,and%20natural%20language%20processing%20domains.)) which will be later used to predict the outcomes:
