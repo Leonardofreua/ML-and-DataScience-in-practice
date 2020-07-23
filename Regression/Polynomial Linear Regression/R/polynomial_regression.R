@@ -1,7 +1,22 @@
 # Polynomial Regression
 
-# As our dataset has only 10 records, we won't create a test division, 
-# we will only have a single set to be trained.
+# -------------------------------------------------------------
+#                         SCENARIO                            |
+#                                                             |
+# A job seeker is asking for the same amount he received at   |
+# his last job and he said that this figure is 160K a year.   |
+# So, to improve our negotiation, we will apply the model     |
+# below to check if he is telling the truth or bluffing.      |    
+#                                                             |
+# -------------------------------------------------------------
+
+# -------------------------------------------------------------
+#                        OBSERVATION                          |
+#                                                             |
+# As our dataset has only 10 records, we won't create a test  |
+# division, we will only have a single set to be trained.     |
+#                                                             |
+# -------------------------------------------------------------
 
 # Importing the dataset
 dataset = read.csv('../../../Datasets/Position_Salaries.csv')
