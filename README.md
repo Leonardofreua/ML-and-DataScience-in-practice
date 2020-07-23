@@ -31,6 +31,9 @@
   - [4.5. Decision Tree Regression](#45-decision-tree-regression)
     - [4.5.1. Definition](#451-definition)
     - [4.5.2. Advantage and Disadvantages](#452-advantage-and-disadvantages)
+  - [4.6. Random Forest Regression](#46-random-forest-regression)
+    - [4.6.1. Definition](#461-definition)
+    - [4.6.2. Types of Ensemble Learning](#462-types-of-ensemble-learning)
 
 # 1. Applications of `Machine Learning`
 
@@ -546,3 +549,44 @@ The resulting Tree (obtained by applying algorithms like [CART](https://machinel
 [Decision Tree - Regression](https://saedsayad.com/decision_tree_reg.htm)<br />
 [Decision Tree Regressor explained in depth](https://gdcoder.com/decision-tree-regressor-explained-in-depth/)<br />
 [Entropy: How Decision Trees Make Decisions](https://towardsdatascience.com/entropy-how-decision-trees-make-decisions-2946b9c18c8)
+
+## 4.6. Random Forest Regression
+
+[:snake: Notebook code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Regression/Random%20Forest%20Regression/Python/random_forest_regression.ipynb) | [:chart_with_upwards_trend: R code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Regression/Random%20Forest%20Regression/R/random_forest_regression.R)
+
+---
+**:pushpin: Topics covered:**
+
+- [4.6.1. Definition](#461-definition)
+- [4.6.2. Types of Ensemble Learning](#462-types-of-ensemble-learning)
+
+---
+
+### 4.6.1. Definition
+
+The Random Forest is a <ins>supervised ensemble learning</ins> algorithm, which can applied for **classification** and **regression**. THis means that it makes use of several [Decisions Trees](#45-decision-tree-regression) to obtain the results, along with a technique caleed **Bootstrap Aggregation** (also called **Bagging**).
+
+<p align="center">
+  <img src=".github/random_forest_regression.png" alt="Random Forest Regression"/>
+</p>
+
+The trees are executed in parallel and <ins>there is no interation between them during their building</ins>.
+
+A random forest is a meta-estimator (i.e. it combines the result of multiple predictions) which **aggregates many decision trees**, with some helpful modifications:
+
+> * The number of features that can be divided for each node, is defined by means of a percentage that is known as **Hyperparameter**. Is this way, the model guarantees that dependence on a specific feature won't occur, but makes **fair use of all possibly predictive features**;
+>  <br />
+> 
+> * Each tree draws a random sample from the original data set when generating its splits, adding a further element of randomness that prevents overfitting.
+
+### 4.6.2. Types of Ensemble Learning
+
+* **Bootstrap aggregating (bagging)**:
+> Bootstrap aggregating, often abbreviated as bagging, involves having each model in the ensemble vote with equal weight. In order to promote model variance, bagging trains each model in the ensemble using a randomly drawn subset of the training set. As an example, the random forest algorithm combines random decision trees with bagging to achieve very high classification accuracy.
+
+* **Boosting**:
+> This type of ensemble is based on a group of algorithms that learn from each other. In some cases, the increase has been shown to produce better accuracy than bagging, but it also tends to be more likely to overlap with training data.
+
+**References:**<br />
+[Random Forest Regression](https://towardsdatascience.com/random-forest-and-its-implementation-71824ced454f)<br />
+[Ensemble learning](https://en.wikipedia.org/wiki/Ensemble_learning#Bootstrap_aggregating_(bagging))
