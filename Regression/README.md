@@ -47,12 +47,12 @@
 Simple Linear Regression makes predictions of the **dependent variable (Y)** based on the value of the **independent variable (X)**.
 
  <p align="center">
-  <img src=".github/simple_linear_regression.png" alt="Simple Linear Regression" width="450"/>
+  <img src="../.github/simple_linear_regression.png" alt="Simple Linear Regression" width="450"/>
 </p>
 
 **Equation**:
 <p align="center">
-  <img src=".github/SLR_equation.png" alt="SLR Equation"/>
+  <img src="../.github/SLR_equation.png" alt="SLR Equation"/>
 
   <em>Font: rstudio-pubs-static - [Simple linear regression Equation](https://rstudio-pubs-static.s3.amazonaws.com/401724_c38918314a8d479ab351f4f83a8fa284.html)</em>
 </p>
@@ -74,7 +74,7 @@ The center line represents the best fit line or the Simple Linear regression mod
 Now, to better adjust this line, add the values of the red and green cross, then square the result, and find the minimum, As depicted in the image:
 
  <p align="center">
-  <img src=".github/find_the_best_fit_line.png" alt="How to find best fit line?" width="450"/>
+  <img src="../.github/find_the_best_fit_line.png" alt="How to find best fit line?" width="450"/>
 </p>
 
 **References**:<br />
@@ -108,7 +108,7 @@ You can use multiple linear regression when you want to know:
 
 **Equation**:
 <p align="center">
-  <img src=".github/MLR_equation.png" alt="MLR Equation" />
+  <img src="../.github/MLR_equation.png" alt="MLR Equation" />
 </p>
 
 > * **y** = the predicted value of the dependent variable;
@@ -134,7 +134,7 @@ You can use multiple linear regression when you want to know:
 * **Normality**: Multple regression assumes that the residuals are normally distributed.
 
 <p align="center">
-  <img src=".github/normality_assumption.png" alt="Normality Assumption"/>
+  <img src="../.github/normality_assumption.png" alt="Normality Assumption"/>
 
   <em>Font: Analytics Vidhya - [Going Deeper into Regression Analysis with Assumptions, Plots & Solutions](https://www.analyticsvidhya.com/blog/2016/07/deeper-regression-analysis-assumptions-plots-solutions/)</em>
 </p>
@@ -150,13 +150,13 @@ So basically the information that we have is the profit of each company or each 
 So, we need to do a Multiple Linear Regression to get those answers. Our equation will be formed according to the indicated values, as we can see below:
 
 <p align="center">
-  <img src=".github/dummy_variables_table.png" alt="Dummy Variables Table"/>
+  <img src="../.github/dummy_variables_table.png" alt="Dummy Variables Table"/>
 </p>
 
 *Allocating values in the equation:*
 
 <p align="center">
-  <img src=".github/MLR_equation_2.png" alt="MLR Equation 2"/>
+  <img src="../.github/MLR_equation_2.png" alt="MLR Equation 2"/>
 </p>
 
 After allocating all values, we come across the **State** column, which refers to a type of the **categorical variable** and in order to be able to add it to our equation, we need to create **Dummy Variables**. 
@@ -164,13 +164,13 @@ After allocating all values, we come across the **State** column, which refers t
 To start the Dummy Variables creating, we need to through the State column and find all the different categories we have. In this case, we have **two**:
 
 <p align="center">
-  <img src=".github/dummy_variable_categories.png" alt="Dummy Variables Categories"/>
+  <img src="../.github/dummy_variable_categories.png" alt="Dummy Variables Categories"/>
 </p>
 
 So for each category found, we need to create a new column for each one:
 
 <p align="center">
-  <img src=".github/dummy_variables_new_columns.png" alt="Dummy Variables New Columns"/>
+  <img src="../.github/dummy_variables_new_columns.png" alt="Dummy Variables New Columns"/>
 </p>
 
 In this way, we are **expanding** our dataset and here comes the fun part, in which we need to fill in these columns.
@@ -178,13 +178,13 @@ In this way, we are **expanding** our dataset and here comes the fun part, in wh
 For that, we need to find all the lines where the state of **New York** is present and add the number **1** in the corresponding lines, in the others put **0**:
 
 <p align="center">
-  <img src=".github/dummy_variables_filled_1.png" alt="Dummy Variables Filled 1"/>
+  <img src="../.github/dummy_variables_filled_1.png" alt="Dummy Variables Filled 1"/>
 </p>
 
 For **California**, we need to do **same thing**:
 
 <p align="center">
-  <img src=".github/dummy_variables_filled_2.png" alt="Dummy Variables Filled 2"/>
+  <img src="../.github/dummy_variables_filled_2.png" alt="Dummy Variables Filled 2"/>
 </p>
 
 This way we finish our changes and our data set has these new columns that are called **Dummy Variables**.
@@ -192,19 +192,19 @@ This way we finish our changes and our data set has these new columns that are c
 Now it's easy to proceed with the construction of our Multiple Linear Regression model. Instead of using the old **States** column, we will use our new columns:
 
 <p align="center">
-  <img src=".github/dummy_variables_filled_3.png" alt="Dummy Variables Filled 3"/>
+  <img src="../.github/dummy_variables_filled_3.png" alt="Dummy Variables Filled 3"/>
 </p>
 
 In fact, we will only need to use the **New York** column, as it already provides us with all the information we need, as it's enough to say immediately if the company is located in New York **(1)**, if it's not in California **(0)**. But it is important to note that **all information in the data set WILL BE PRESERVED**:
 
 <p align="center">
-  <img src=".github/dummy_variables_only_new_york.png" alt="Dummy Variables Only New York"/>
+  <img src="../.github/dummy_variables_only_new_york.png" alt="Dummy Variables Only New York"/>
 </p>
 
 Finally, our equation will look like this:
 
 <p align="center">
-  <img src=".github/MLR_equation_3.png" alt="MLR Equation 3"/>
+  <img src="../.github/MLR_equation_3.png" alt="MLR Equation 3"/>
 </p>
 
 In [Dummy Variable Trap](#425-dummy-variable-trap) we wil explain the reason for not using the column for the state California.
@@ -242,7 +242,7 @@ Analysing the table above, we can see that the **California** and **Missouri** c
 And our equation  would be presented as follows:
 
 <p align="center">
-  <img src=".github/MLR_equation_4.png" alt="MLR Equation 4"/>
+  <img src="../.github/MLR_equation_4.png" alt="MLR Equation 4"/>
 </p>
 
 ### 4.2.6. Building a Model with the right methods
@@ -309,7 +309,7 @@ Polynomial Linear Regression is very similar to [Simple Liner Regression](#41-si
 In this example, we have a Simple Linear Regression applied to a dataset that contains information in which this type of regression cannot **linearly** track the positions of the information.
 
 <p align="center">
-  <img src=".github/SLR_no_linear.png" alt="SLR no linear"/>
+  <img src="../.github/SLR_no_linear.png" alt="SLR no linear"/>
 </p>
 
 Below, we apply the Polynomial Linear Regression to obtain the plot adjusted to the data. That way, we can more accurately predict the information we want. 
@@ -317,12 +317,12 @@ Below, we apply the Polynomial Linear Regression to obtain the plot adjusted to 
 [*To view this plot with a **higher** and **smoother curve**, access the Notebook*](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Regression/Polynomial%20Linear%20Regression/Python/polynomial_regression.ipynb)
 
 <p align="center">
-  <img src=".github/PLR_adjusted_plot.png" alt="PLR adjusted plot"/>
+  <img src="../.github/PLR_adjusted_plot.png" alt="PLR adjusted plot"/>
 </p>
 
 **Equation:**
 <p align="center">
-  <img src=".github/PLR_equation.png" alt="PLR Equation"/>
+  <img src="../.github/PLR_equation.png" alt="PLR Equation"/>
 </p>
 
 ### 4.3.2. Application examples
@@ -367,13 +367,13 @@ Often not mentioned in courses, SVM is a supervised learning model with associat
 Basically, what an SVM does is find a line of separation, more commoly called a **Hyperplane** between data from two classes. This lines seeks to maximize the distance between the closest points in relation to each of the classes.
 
 <p align="center">
-  <img src=".github/SVR_hyperplane_chart.png" alt="SVR Hyperplane Chart"/>
+  <img src="../.github/SVR_hyperplane_chart.png" alt="SVR Hyperplane Chart"/>
 </p>
 
 We will apply SVM in it's regression form, so in this scenario, we will call it **Support Vector Regression (SRV)**. The principle behind SVR is the same as SVM, with only a few minor changes. As the results of the prediction are usually in real numbers, the SVR creates a **margin of tolerance (epsilon - ε)** that included other classifications besides those performed initially by the SVM.
 
 <p align="center">
-  <img src=".github/SVR_epsilon.png" alt="SVR Epsilon"/>
+  <img src="../.github/SVR_epsilon.png" alt="SVR Epsilon"/>
 </p>
 
 ### 4.4.2. Application examples
@@ -419,19 +419,19 @@ There are some parameters that are important to know before starting the SVM app
 The Decision Tree can build **Regression** and **Classification** models; in the case of Regression, it forms <ins>**non-continuous models**</ins>. A data set is divided into smaller and smaller subsets, in parallel to that, an associated decision tree is developed incrementally.
 
 <p align="center">
-  <img src=".github/decision_tree_splitting.png" alt="Decision Tree Splitting"/>
+  <img src="../.github/decision_tree_splitting.png" alt="Decision Tree Splitting"/>
 </p>
 
 <h4 align="center">Non-continuous model example</h4>
 
 <p align="center">
-  <img src=".github/non_continuous_model.png" alt="Non-continous model example"/>
+  <img src="../.github/non_continuous_model.png" alt="Non-continous model example"/>
 </p>
 
 The resulting Tree (obtained by applying algorithms like [CART](https://machinelearningmastery.com/classification-and-regression-trees-for-machine-learning/) and [ID3](https://en.wikipedia.org/wiki/ID3_algorithm#:~:text=In%20decision%20tree%20learning%2C%20ID3,and%20natural%20language%20processing%20domains.)) which will be later used to predict the outcomes:
 
 <p align="center">
-  <img src=".github/decision_tree_generated.png" alt="Decision Tree Generated" width="650"/>
+  <img src="../.github/decision_tree_generated.png" alt="Decision Tree Generated" width="650"/>
 </p>
 
 ### 4.5.2. Advantage and Disadvantages
@@ -480,7 +480,7 @@ The resulting Tree (obtained by applying algorithms like [CART](https://machinel
 The Random Forest is a <ins>supervised ensemble learning</ins> algorithm, which can applied for **classification** and **regression**. THis means that it makes use of several [Decisions Trees](#45-decision-tree-regression) to obtain the results, along with a technique caleed **Bootstrap Aggregation** (also called **Bagging**).
 
 <p align="center">
-  <img src=".github/random_forest_regression.png" alt="Random Forest Regression"/>
+  <img src="../.github/random_forest_regression.png" alt="Random Forest Regression"/>
 </p>
 
 The trees are executed in parallel and <ins>there is no interation between them during their building</ins>.
