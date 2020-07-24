@@ -34,6 +34,10 @@
   - [4.6. Random Forest Regression](#46-random-forest-regression)
     - [4.6.1. Definition](#461-definition)
     - [4.6.2. Types of Ensemble Learning](#462-types-of-ensemble-learning)
+  - [4.7. Regression **Pros** and **Cons**](#47-regression-pros-cons)
+- [5. How to choose the most suitable models](#5-how-to-choose-the-most-suitable-models)
+  - [5.1. Evaluating Regression Models Performance](#51-evaluating-regression-models-performance)
+    - [5.1.1. R Squared](#511-r-squared)
 
 # 1. Applications of `Machine Learning`
 
@@ -590,3 +594,125 @@ A random forest is a meta-estimator (i.e. it combines the result of multiple pre
 **References:**<br />
 [Random Forest Regression](https://towardsdatascience.com/random-forest-and-its-implementation-71824ced454f)<br />
 [Ensemble learning](https://en.wikipedia.org/wiki/Ensemble_learning#Bootstrap_aggregating_(bagging))
+
+## 4.7. Regression **Pros** and **Cons**
+
+<table style="width:100% !important; margin: auto;">
+  <tr>
+    <th>Regression Model</th>
+    <th>Pros</th>
+    <th>Cons</th>
+  </tr>
+  <tr>
+    <th>Linear Regression</th>
+    <td>
+      Works on any size of dataset, gives informations
+      about relevance of features
+    </td>
+    <td>The Linear Regression Assumptions</td>
+  </tr>
+  <tr>
+    <th>Polynomial Regression</th>
+    <td>
+      Works on any size of dataset, works very
+      well on non linear problems
+    </td>
+    <td>
+      Need to choose the right polynomial degree
+      for a good bias/variance tradeoff
+    </td>
+  </tr>
+  <tr>
+    <th>SVR</th>
+    <td>
+      Easily adaptable, works very well on non
+      linear problems, not biased by outliers
+    </td>
+    <td>
+      Compulsory to apply feature scaling, not
+      well known, more difficult to understand  
+    </td>
+  </tr>
+  <tr>
+    <th>Decision Tree Regression</th>
+    <td>
+      Interpretability, on need for feature scaling,
+      works on both linear/nonlinear problems
+    </td>
+    <td>
+      Poor results on too small datasets,
+      overfitting can easily occur
+    </td>
+  </tr>
+  <tr>
+    <th>Random Forest Regression</th>
+    <td>
+      Powerful and accurate, good performance
+      on many problems, including non linear
+    </td>
+    <td>
+      No interpretability, overfitting can easily
+      occur, need to choose the number of trees
+    </td>
+  </tr>
+</table>
+
+# 5. How to choose the most suitable models
+
+With so many models available, it is normal ot be in doubt about which to select for each situation. For this, we will use the **R²** method to evaluate the performance of our model, so we can be sure if we are making the most appropriate choice.
+
+<table style="width:60% !important; margin: auto;">
+    <tr>
+        <th>Multiple Linear Regression</th>
+        <td><a href="https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Model%20Selection/Multiple%20Linear%20Regression/Python/multiple_linear_regression.ipynb">🐍 Notebook code</a></td>
+        <td>📈 R code</td>
+    </tr>
+    <tr>
+        <th>Polynomial Linear Regression</th>
+        <td><a href="https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Model%20Selection/Polynomial%20Linear%20Regression/Python/polynomial_regression.ipynb">🐍 Notebook code</a></td>
+        <td>📈 R code</td>
+    </tr>
+    <tr>
+        <th>Support Vector Regression (SVR)</th>
+        <td><a href="https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Model%20Selection/Support%20Vector%20Regression%20(SVR)/Pyhton/support_vector_regression.ipynb">🐍 Notebook code</a></td>
+        <td>📈 R code</td>
+    </tr>
+    <tr>
+        <th>Decision Tree Regression</th>
+        <td><a href="https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Model%20Selection/Decision%20Tree%20Regression/Python/decision_tree_regression.ipynb">🐍 Notebook code</a></td>
+        <td>📈 R code</td>
+    </tr>
+    <tr>
+        <th>Random Forest Regressio</th>
+        <td><a href="https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Model%20Selection/Random%20Forest%20Regression/Python/random_forest_regression.ipynb">🐍 Notebook code</a></td>
+        <td>📈 R code</td>
+    </tr>
+  </table>
+
+---
+**:pushpin: Topics covered:**
+
+- [5.1. Evaluating Regression Models Performance](#51-evaluating-regression-models-performance)
+  - [5.1.1. R Squared](#511-r-squared)
+
+---
+
+## 5.1. Evaluating Regression Models Performance
+
+The **coefficient of determination** denoted R² and pronounced "**R squared**", is the proportion of the variance in the dependent variable that is predictable from the independent variable(s).
+
+The R² varies between 0 and 1, sometimes being expressed in percentage terms. In this case, it express the amount of variance in the data that is explained by the linear model. Thus, the higher the R², the more explanatory the linear model is, that is, the better it fits the sample. For example, an **R² = 0.8234** means that the linear model explains **82.34%** of the variance of the dependent variable from the regressors (independent variables) included in that linear model.
+
+### 5.1.1. R Squared
+
+We will use a more efficient version of R², which is the **adjusted R²**. And the reason for this is because by including numerous variables, even though they have very little explanatory power over the dependent variable, <ins>they will increase the value of R²</ins>. This encourages the indiscriminate inclusion of variables, which may increase the R² superficially, with variables that are not relevent to our predictions. To combat this trend, we will use the **adjusted R², which penalizes the inclusion of little explanatory regressors.
+
+<p align="center">
+  <img src=".github/adjusted_r.png" alt="Adjusted R"/>
+</p>
+
+> * **p** = where p is the total number of explanatory variables in the model (not including the constant term);
+> * **n** = n is the sample size;
+
+**References:**<br />
+[Coefficient of determination](https://en.wikipedia.org/wiki/Coefficient_of_determination#Adjusted_R2)
