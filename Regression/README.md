@@ -565,3 +565,9 @@ A random forest is a meta-estimator (i.e. it combines the result of multiple pre
     </td>
   </tr>
 </table>
+
+<br />
+
+**Continue reading the next chapter :next_track_button::** [How to choose the most suitable models](https://github.com/Leonardofreua/ML-and-DataScience-in-practice#5-how-to-choose-the-most-suitable-models)
+<br />
+[:house: Go to home](https://github.com/Leonardofreua/ML-and-DataScience-in-practice)
