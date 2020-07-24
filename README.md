@@ -90,35 +90,42 @@ In this stage of data Preprocessing, we will start a Notebook with the following
   [Feature Scaling and Normalisation in a nutshell](https://medium.com/@giorgosmyrianthous/feature-scaling-and-normalisation-in-a-nutshell-5319af86f89b)<br />
   [Euclidian Distance](https://en.wikipedia.org/wiki/Euclidean_distance)
 
+# [4. Regression](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/tree/master/Regression)
+
 # 5. How to choose the most suitable models
 
 With so many models available, it is normal ot be in doubt about which to select for each situation. For this, we will use the **R²** method to evaluate the performance of our model, so we can be sure if we are making the most appropriate choice.
+
+**Obs.:** To display the **Adjusted R** in models implemented in R. After executing all the code, execute the ``summary()`` command with the variable ``regressor``. Example: ``summary(regressor)``
+
+<details>
+  <summary>Click to see the sample image</summary>
+
+  <p align="center">
+    <img src=".github/adjusted_R_summary.png" alt="Adjusted R summary"/>
+  </p>
+</details>
 
 <table style="width:60% !important; margin: auto;">
     <tr>
         <th>Multiple Linear Regression</th>
         <td><a href="https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Model%20Selection/Multiple%20Linear%20Regression/Python/multiple_linear_regression.ipynb">🐍 Notebook code</a></td>
-        <td>📈 R code</td>
     </tr>
     <tr>
         <th>Polynomial Linear Regression</th>
         <td><a href="https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Model%20Selection/Polynomial%20Linear%20Regression/Python/polynomial_regression.ipynb">🐍 Notebook code</a></td>
-        <td>📈 R code</td>
     </tr>
     <tr>
         <th>Support Vector Regression (SVR)</th>
         <td><a href="https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Model%20Selection/Support%20Vector%20Regression%20(SVR)/Pyhton/support_vector_regression.ipynb">🐍 Notebook code</a></td>
-        <td>📈 R code</td>
     </tr>
     <tr>
         <th>Decision Tree Regression</th>
         <td><a href="https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Model%20Selection/Decision%20Tree%20Regression/Python/decision_tree_regression.ipynb">🐍 Notebook code</a></td>
-        <td>📈 R code</td>
     </tr>
     <tr>
         <th>Random Forest Regressio</th>
         <td><a href="https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Model%20Selection/Random%20Forest%20Regression/Python/random_forest_regression.ipynb">🐍 Notebook code</a></td>
-        <td>📈 R code</td>
     </tr>
   </table>
 

@@ -1,3 +1,4 @@
+
 - [4.1. Simple Linear Regression](#41-simple-linear-regression)
     - [4.1.1. Definition](#411-definition)
     - [4.1.2. Aplication examples](#412-aplication-examples)
@@ -25,7 +26,9 @@
     - [4.6.2. Types of Ensemble Learning](#462-types-of-ensemble-learning)
   - [4.7. Regression **Pros** and **Cons**](#47-regression-pros-and-cons)
 
-  # 4. Regression
+# 4. Regression
+
+Regression models (both linear and non-linear) are used for predicting a real value, like salary for example. If your independent variable is time, then you are forecasting future values, otherwise your model is predicting present but unknown values. Regression technique vary from Linear Regression to SVR and Random Forests Regression.
 
 ## 4.1. Simple Linear Regression
 
@@ -565,3 +568,9 @@ A random forest is a meta-estimator (i.e. it combines the result of multiple pre
     </td>
   </tr>
 </table>
+
+<br />
+
+**Continue reading the next chapter :next_track_button::** [How to choose the most suitable models](https://github.com/Leonardofreua/ML-and-DataScience-in-practice#5-how-to-choose-the-most-suitable-models)
+<br /><br />
+[:house: Home](https://github.com/Leonardofreua/ML-and-DataScience-in-practice)
