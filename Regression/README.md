@@ -26,7 +26,9 @@
     - [4.6.2. Types of Ensemble Learning](#462-types-of-ensemble-learning)
   - [4.7. Regression **Pros** and **Cons**](#47-regression-pros-and-cons)
 
-  # 4. Regression
+# 4. Regression
+
+Regression models (both linear and non-linear) are used for predicting a real value, like salary for example. If your independent variable is time, then you are forecasting future values, otherwise your model is predicting present but unknown values. Regression technique vary from Linear Regression to SVR and Random Forests Regression.
 
 ## 4.1. Simple Linear Regression
 
