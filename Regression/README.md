@@ -1,3 +1,4 @@
+
 - [4.1. Simple Linear Regression](#41-simple-linear-regression)
     - [4.1.1. Definition](#411-definition)
     - [4.1.2. Aplication examples](#412-aplication-examples)
@@ -569,5 +570,5 @@ A random forest is a meta-estimator (i.e. it combines the result of multiple pre
 <br />
 
 **Continue reading the next chapter :next_track_button::** [How to choose the most suitable models](https://github.com/Leonardofreua/ML-and-DataScience-in-practice#5-how-to-choose-the-most-suitable-models)
-<br />
-[:house: Go to home](https://github.com/Leonardofreua/ML-and-DataScience-in-practice)
+<br /><br />
+[:house: Home](https://github.com/Leonardofreua/ML-and-DataScience-in-practice)

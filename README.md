@@ -90,6 +90,8 @@ In this stage of data Preprocessing, we will start a Notebook with the following
   [Feature Scaling and Normalisation in a nutshell](https://medium.com/@giorgosmyrianthous/feature-scaling-and-normalisation-in-a-nutshell-5319af86f89b)<br />
   [Euclidian Distance](https://en.wikipedia.org/wiki/Euclidean_distance)
 
+# [4. Regression](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/tree/master/Regression)
+
 # 5. How to choose the most suitable models
 
 With so many models available, it is normal ot be in doubt about which to select for each situation. For this, we will use the **R²** method to evaluate the performance of our model, so we can be sure if we are making the most appropriate choice.
