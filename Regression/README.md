@@ -459,7 +459,7 @@ The resulting Tree (obtained by applying algorithms like [CART](https://machinel
   > * Decision trees can be unstable.
   > * No Guarantee to return the globally optimal decision tree.
 
-**See:** [Entropy](https://towardsdatascience.com/entropy-how-decision-trees-make-decisions-2946b9c18c8)
+**:warning: See:** [Entropy](https://towardsdatascience.com/entropy-how-decision-trees-make-decisions-2946b9c18c8)
 
 **References:**<br />
 [Decision Tree - Regression](https://saedsayad.com/decision_tree_reg.htm)<br />

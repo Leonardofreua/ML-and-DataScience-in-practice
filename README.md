@@ -12,6 +12,12 @@
 - [5. How to choose the most suitable models](#5-how-to-choose-the-most-suitable-models)
   - [5.1. Evaluating Regression Models Performance](#51-evaluating-regression-models-performance)
     - [5.1.1. R Squared](#511-r-squared)
+- [5. Classification](#5-classification)
+  - [5.1. Logistic Regression](#51-logistic-regression)
+    - [5.1.1. Definition](#511-definition)
+    - [5.1.2. Sigmoid Function](#512-sigmoid-function)
+    - [5.1.3. How does it work?](#513-how-does-it-work)
+    - [5.1.4. Aplication examples](#514-aplication-examples)
 
 # 1. Applications of `Machine Learning`
 
@@ -156,3 +162,79 @@ We will use a more efficient version of R², which is the **adjusted R²**. And 
 
 **References:**<br />
 [Coefficient of determination](https://en.wikipedia.org/wiki/Coefficient_of_determination#Adjusted_R2)
+
+# 5. Classification
+
+Unlike regression where you predict a continuous number, you use classification to predict a category. There is a wide variety of classification applications from medicine to marketing. Classification models include linear models like Logistic Regression, SVM, and nonlinear ones like K-NN, Kernel SVM and Random Forests.
+
+## 5.1 Logistic Regression
+
+[:snake: Notebook code]() | [:chart_with_upwards_trend: R code]()
+
+---
+**:pushpin: Topics covered:**
+
+- [5.1.1. Definition](#511-definition)
+- [5.1.2. Sigmoid Function](#512-sigmoid-function)
+- [5.1.3. How does it work?](#513-how-does-it-work)
+- [5.1.4. Aplication examples](#514-aplication-examples)
+
+---
+
+### 5.1.1. Definition
+
+Logistic Regression is a statiscal technique that aims to produce, from a set of observations, a model that allows the prediction of categories, from a series of continuous and/or binary explanatory variables. THis provides a discrete binary outcome between 0 and 1.
+
+> *In comparison with known regression techniques, especially **linear regression**, Logistic Regression is essentially distinguished by the fact that the response variable is categorical.*
+
+### 5.1.2. Sigmoid Function
+
+The Logistic Regression uses the Sigmoid Function to create your models and this is a mathematical expansion function used in economics and computing, it has this name because of it's **S-shaped curve**. It will process any number with real value and map it between 0 and 1.
+
+<p align="center">
+  <img src=".github/sigmoid_function.png" alt="Sigmoid Function"/>
+</p>
+
+### 5.1.3. How does it work?
+
+A measure of the relationship that may exist between the **dependent variable** (our label/category that you want to predict) is carried out with <ins>one or more</ins> **independent variables**(our features). After that, the probability that exists between these relationships is estimated.
+
+**SCENARIO:**
+
+We will use the following scenario as a basis for the following example: 
+> *The company that hired us sends emails with offers to it's customers and wants to know the probability among the age groups that will **accept** the offers or **ignore** them.*
+
+In order to obtain a **Logistic Regression** with some characteristics of linear regression but with the S-shaped curve of the **Sigmoid Function**, we need to apply the following equation, which is the junction of the **Sigmoid Function** with the linear regression equation.
+
+<p align="center">
+  <img src=".github/logistic_regression_equation.png" alt="Logistic Regression Equation"/>
+</p>
+
+After that, we can see how the probabilities are obtained, this is called **p_hat (p^)**. <ins>These probabilities are related to the percentage of chance that exists for a certain age group and would accept the offer sent via email or not.</ins>
+
+<p align="center">
+  <img src=".github/logistic_regression_example_1.png" alt="Logistic Regression Example 1"/>
+</p>
+
+Finally, we bneed to obtain the value of our prediction, which is related to our **dependent value (DV)**, but since we want the prediction to be not the real value of the probability, we will be call this representation of the result of **y** as **y_hat (y^)**, which, the results will be displayed by 0 or 1.
+
+<p align="center">
+  <img src=".github/logistic_regression_example_2.png" alt="Logistic Regression Example 2"/>
+</p>
+
+### 5.1.4. Aplication examples
+
+> * In medicine, it allows for example to determine the factors that characterize a group of sick individuals in relation to healthy individuals;
+> * In the insurance field, it allows us to find fractions of the clientele that are sensitive to a certain insurance policy in relation to a given particular risk;
+> * In financial institutions, it can detect risk groups for underwriting credit;
+> * Predict whether a voter will vote for a given party based on age, income, sex, race, state of residence, votes in previous elections, etc. of the voter;
+> * It can also be used in engineering, especially to predict the probability of failure in a given process, system, or product;
+> * Can be used to predict the risk of developing a given disease (for example, diabetes or coronary artery disease), based on the patient's observed characteristics (age, sex, body mass index, results of various blood tests, etc.).
+
+<br />
+
+##### :warning: This is a brief outline of that is behind the <ins>Logistic Regression</ins>, it is always good to study a little more about the functioning of this classification model. <ins>See the references</ins>.
+
+**References:**<br />
+[Logistic regression](https://en.wikipedia.org/wiki/Logistic_regression)<br />
+[Sigmoid Function](https://en.wikipedia.org/wiki/Sigmoid_function)<br />
