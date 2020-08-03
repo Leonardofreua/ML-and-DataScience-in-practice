@@ -12,12 +12,12 @@
 - [5. How to choose the most suitable models](#5-how-to-choose-the-most-suitable-models)
   - [5.1. Evaluating Regression Models Performance](#51-evaluating-regression-models-performance)
     - [5.1.1. R Squared](#511-r-squared)
-- [5. Classification](#5-classification)
-  - [5.1. Logistic Regression](#51-logistic-regression)
-    - [5.1.1. Definition](#511-definition)
-    - [5.1.2. Sigmoid Function](#512-sigmoid-function)
-    - [5.1.3. How does it work?](#513-how-does-it-work)
-    - [5.1.4. Aplication examples](#514-aplication-examples)
+- [6. Classification](#6-classification)
+  - [6.1. Logistic Regression](#61-logistic-regression)
+    - [6.1.1. Definition](#611-definition)
+    - [6.1.2. Sigmoid Function](#612-sigmoid-function)
+    - [6.1.3. How does it work?](#613-how-does-it-work)
+    - [6.1.4. Aplication examples](#614-aplication-examples)
 
 # 1. Applications of `Machine Learning`
 
@@ -163,31 +163,31 @@ We will use a more efficient version of R², which is the **adjusted R²**. And 
 **References:**<br />
 [Coefficient of determination](https://en.wikipedia.org/wiki/Coefficient_of_determination#Adjusted_R2)
 
-# 5. Classification
+# 6. Classification
 
 Unlike regression where you predict a continuous number, you use classification to predict a category. There is a wide variety of classification applications from medicine to marketing. Classification models include linear models like Logistic Regression, SVM, and nonlinear ones like K-NN, Kernel SVM and Random Forests.
 
-## 5.1 Logistic Regression
+## 6.1 Logistic Regression
 
 [:snake: Notebook code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Classification/Logistic%20Regression/Python/logistic_regression.ipynb) | [:chart_with_upwards_trend: R code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Classification/Logistic%20Regression/R/logistic_regression.R)
 
 ---
 **:pushpin: Topics covered:**
 
-- [5.1.1. Definition](#511-definition)
-- [5.1.2. Sigmoid Function](#512-sigmoid-function)
-- [5.1.3. How does it work?](#513-how-does-it-work)
-- [5.1.4. Aplication examples](#514-aplication-examples)
+- [6.1.1. Definition](#611-definition)
+- [6.1.2. Sigmoid Function](#612-sigmoid-function)
+- [6.1.3. How does it work?](#613-how-does-it-work)
+- [6.1.4. Aplication examples](#614-aplication-examples)
 
 ---
 
-### 5.1.1. Definition
+### 6.1.1. Definition
 
 Logistic Regression is a statiscal technique that aims to produce, from a set of observations, a model that allows the prediction of categories, from a series of continuous and/or binary explanatory variables. THis provides a discrete binary outcome between 0 and 1.
 
 > *In comparison with known regression techniques, especially **linear regression**, Logistic Regression is essentially distinguished by the fact that the response variable is categorical.*
 
-### 5.1.2. Sigmoid Function
+### 6.1.2. Sigmoid Function
 
 The Logistic Regression uses the Sigmoid Function to create your models and this is a mathematical expansion function used in economics and computing, it has this name because of it's **S-shaped curve**. It will process any number with real value and map it between 0 and 1.
 
@@ -195,7 +195,7 @@ The Logistic Regression uses the Sigmoid Function to create your models and this
   <img src=".github/sigmoid_function.png" alt="Sigmoid Function"/>
 </p>
 
-### 5.1.3. How does it work?
+### 6.1.3. How does it work?
 
 A measure of the relationship that may exist between the **dependent variable** (our label/category that you want to predict) is carried out with <ins>one or more</ins> **independent variables**(our features). After that, the probability that exists between these relationships is estimated.
 
@@ -222,7 +222,7 @@ Finally, we bneed to obtain the value of our prediction, which is related to our
   <img src=".github/logistic_regression_example_2.png" alt="Logistic Regression Example 2"/>
 </p>
 
-### 5.1.4. Aplication examples
+### 6.1.4. Aplication examples
 
 > * In medicine, it allows for example to determine the factors that characterize a group of sick individuals in relation to healthy individuals;
 > * In the insurance field, it allows us to find fractions of the clientele that are sensitive to a certain insurance policy in relation to a given particular risk;
