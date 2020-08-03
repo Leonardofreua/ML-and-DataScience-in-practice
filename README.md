@@ -169,7 +169,7 @@ Unlike regression where you predict a continuous number, you use classification 
 
 ## 5.1 Logistic Regression
 
-[:snake: Notebook code]() | [:chart_with_upwards_trend: R code]()
+[:snake: Notebook code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Classification/Logistic%20Regression/Python/logistic_regression.ipynb) | [:chart_with_upwards_trend: R code]()
 
 ---
 **:pushpin: Topics covered:**
