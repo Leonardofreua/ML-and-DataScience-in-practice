@@ -18,6 +18,10 @@
     - [6.1.2. Sigmoid Function](#612-sigmoid-function)
     - [6.1.3. How does it work?](#613-how-does-it-work)
     - [6.1.4. Aplication examples](#614-aplication-examples)
+- [7. K-Nearest Neighbors](#7-k-nearest-neighbors)
+  - [7.1.1. Definition](#711-definition)
+  - [7.1.2. How does it work?](#712-how-does-it-work)
+  - [7.1.3. The distance](#713-the-distance)
 
 # 1. Applications of `Machine Learning`
 
@@ -169,6 +173,7 @@ Unlike regression where you predict a continuous number, you use classification 
 
 ## 6.1 Logistic Regression
 
+##### :warning: Because these algorithms contain many calculations, the execution of these codes can take a few minutes.
 [:snake: Notebook code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Classification/Logistic%20Regression/Python/logistic_regression.ipynb) | [:chart_with_upwards_trend: R code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Classification/Logistic%20Regression/R/logistic_regression.R)
 
 ---
@@ -238,3 +243,65 @@ Finally, we bneed to obtain the value of our prediction, which is related to our
 **References:**<br />
 [Logistic regression](https://en.wikipedia.org/wiki/Logistic_regression)<br />
 [Sigmoid Function](https://en.wikipedia.org/wiki/Sigmoid_function)<br />
+
+# 7. K-Nearest Neighbors
+
+##### :warning: Because these algorithms contain many calculations, the execution of these codes can take a few minutes.
+[:snake: Notebook code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Classification/K-Nearest%20Neighbors%20(K-NN)/Python/k_nearest_neighbors.ipynb) | [:chart_with_upwards_trend: R code]()
+
+---
+**:pushpin: Topics covered:**
+
+- [7.1.1. Definition](#711-definition)
+- [7.1.2. How does it work?](#712-how-does-it-work)
+- [7.1.3. The distance](#713-the-distance)
+
+---
+
+### 7.1.1. Definition
+
+KNN (K - closest neighbors) is a supervised learning algorithm that can be applied in classification or regression.
+
+K-NN is a type of instance-based (means that our algorithm doesn't explicity learn a model. Instead, it chooses to memorize the training instances) learning, or slow learning, in which the function is approximated only locally. Since this algorithm depends on the distance to be classified, normalizing the training data can dramatically improve its accuracy.
+
+<em>In the graph below we show a situation in which we want classify the gray point in **class A** or **class B**.</em>
+
+<p align="center">
+  <img src=".github/KNN_1.png" alt="KNN 1"/>
+</p>
+
+<em>From this, the calculation of the distance between the gray point and it's K-Nearest points is started.</em>
+
+<p align="center">
+  <img src=".github/KNN_2.png" alt="Calculating the distances"/>
+</p>
+
+### 7.1.2. How does it work?
+
+  > **Step 1**: Choose the number K of neighbors;
+  >
+  > **Step 2**: Take the K nearest neighbors of the new data point, according to the **Euclidian distance**;
+  >
+  > **Step 3**: Among these K neighbors, count the number of data points in each category;
+  >
+  > **Step 4**: Assign the new data point to the category where you counted the most nighbors.
+
+### 7.1.3. The distance
+
+Euclidean distance is usually the most used method to determine the distance between the point we want to include and its neighbors. 
+
+<p align="center">
+  <img src=".github/euclidian_distance.png" alt="Euclidian Distance"/>
+</p>
+
+However, there are other approaches, as we can see below:
+* *[Hamming Distance](https://en.wikipedia.org/wiki/Hamming_distance)*
+* *[Manhattan Distance](https://en.wikipedia.org/wiki/Taxicab_geometry)*
+* *[Minkowski Distance](https://en.wikipedia.org/wiki/Minkowski_distance)*
+
+**References:**<br />
+[K-Nearest Neighbors algorithm](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm)<br />
+[Hamming Distance](https://en.wikipedia.org/wiki/Hamming_distance)<br />
+[What is Hamming Distance?](https://www.tutorialspoint.com/what-is-hamming-distance#:~:text=Hamming%20distance%20is%20a%20metric,d(a%2Cb).)<br />
+[Taxicab geometry (Manhattan Distance)](https://en.wikipedia.org/wiki/Taxicab_geometry)<br />
+[Minkowski distance](https://en.wikipedia.org/wiki/Minkowski_distance)
