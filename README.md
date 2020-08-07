@@ -22,6 +22,8 @@
     - [6.2.1. Definition](#621-definition)
     - [6.2.2. How does it work?](#622-how-does-it-work)
     - [6.2.3. The distance](#623-the-distance)
+  - [6.3. Support Vector Machine](#63-support-vector-machine)
+    - [6.3.1. Definition](#631-definition)   
 
 
 # 1. Applications of `Machine Learning`
@@ -310,4 +312,50 @@ However, there are other approaches, as we can see below:
 ## 6.3. Support Vector Machine
 
 ##### :warning: Because these algorithms contain many calculations, the execution of these codes can take a few minutes.
-[:snake: Notebook code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Classification/K-Nearest%20Neighbors%20(K-NN)/Python/k_nearest_neighbors.ipynb) | [:chart_with_upwards_trend: R code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Classification/K-Nearest%20Neighbors%20(K-NN)/R/knn.R)
+[:snake: Notebook code]() | [:chart_with_upwards_trend: R code]()
+
+We already covered this algorithm in the [Regression section](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/tree/master/Regression#44-support-vector-machine), so for more details, access this section. <ins>However</ins>, as we will se below, we will briefly explain the behavior of SVM in the **Classification** environment.
+
+---
+**:pushpin: Topics covered:**
+
+- [6.3.1. Definition](#623-definition)
+
+---
+
+### 6.3.1. Definition
+
+As we have already seen in [Regression section](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/tree/master/Regression#44-support-vector-machine), the SVM works with a line that divides the data, that line is called a **Hyperplane** and in the case of classification, we want to find the best way to position this line, which will eventually assign to which class the to which class the new data will be added.
+
+<p align="center">
+  <img src=".github/SVM_line_projections.png" alt="SVM Line Projections"/>
+</p>
+
+Then, the line is determined by the maximum margin between the classes of points. The distance between the point and the line (hyperplane) is **equidistant**, that is, the distance from the point close to the margin to the hyperplane, is equivalent for both sides.
+
+<p align="center">
+  <img src=".github/SVM_hyperplane_margin.png" alt="SVM Hyperplane margin"/>
+</p>
+
+And the name of Support Vector comes from those two points flagged below, which basically support the entire algorithm. So, even if you get rid of all the remaining points, the algorithm will be exactly the same.
+
+<p align="center">
+  <img src=".github/SVM_support_vectors.png" alt="SVM Support Vectors"/>
+</p>
+
+Next, we can see the hyperplane, which is also known as the maximum margin classifier. For more details, look at how it is described in the [Regression section](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/tree/master/Regression#443-hyperparameters-of-the-svm)
+
+<p align="center">
+  <img src=".github/SVM_hyperplane.png" alt="SVM Hyperplane"/>
+</p>
+
+Finally, we have the lines that represent the margins and these can be called here in our case as **Positive Hyperplane** and **Negative Hyperplane**, but as this is just a way of labeling the categories of the classes, we could simply call it a red category or a green category.
+
+<p align="center">
+  <img src=".github/SVM_positive_and_negative_hyperplane.png" alt="SVM Positive and Negative Hyperplane"/>
+</p>
+
+##### :warning: This is a brief outline of that is behind the <ins>Support Vector Machine</ins>, it is always good to study a little more about the functioning of this classification model. <ins>See the references</ins> and [Regression section (SVM)](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/tree/master/Regression#443-hyperparameters-of-the-svm).
+
+**References:**<br />
+[Equidistant](https://en.wikipedia.org/wiki/Equidistant)<br />
