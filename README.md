@@ -18,10 +18,11 @@
     - [6.1.2. Sigmoid Function](#612-sigmoid-function)
     - [6.1.3. How does it work?](#613-how-does-it-work)
     - [6.1.4. Aplication examples](#614-aplication-examples)
-- [7. K-Nearest Neighbors](#7-k-nearest-neighbors)
-  - [7.1.1. Definition](#711-definition)
-  - [7.1.2. How does it work?](#712-how-does-it-work)
-  - [7.1.3. The distance](#713-the-distance)
+  - [6.2. K-Nearest Neighbors](#62-k-nearest-neighbors)
+    - [6.2.1. Definition](#621-definition)
+    - [6.2.2. How does it work?](#622-how-does-it-work)
+    - [6.2.3. The distance](#623-the-distance)
+
 
 # 1. Applications of `Machine Learning`
 
@@ -167,7 +168,7 @@ We will use a more efficient version of R², which is the **adjusted R²**. And 
 **References:**<br />
 [Coefficient of determination](https://en.wikipedia.org/wiki/Coefficient_of_determination#Adjusted_R2)
 
-# 6. Classification
+# 6.1. Classification
 
 Unlike regression where you predict a continuous number, you use classification to predict a category. There is a wide variety of classification applications from medicine to marketing. Classification models include linear models like Logistic Regression, SVM, and nonlinear ones like K-NN, Kernel SVM and Random Forests.
 
@@ -244,21 +245,21 @@ Finally, we bneed to obtain the value of our prediction, which is related to our
 [Logistic regression](https://en.wikipedia.org/wiki/Logistic_regression)<br />
 [Sigmoid Function](https://en.wikipedia.org/wiki/Sigmoid_function)<br />
 
-# 7. K-Nearest Neighbors
+## 6.2. K-Nearest Neighbors
 
 ##### :warning: Because these algorithms contain many calculations, the execution of these codes can take a few minutes.
-[:snake: Notebook code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Classification/K-Nearest%20Neighbors%20(K-NN)/Python/k_nearest_neighbors.ipynb) | [:chart_with_upwards_trend: R code]()
+[:snake: Notebook code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Classification/K-Nearest%20Neighbors%20(K-NN)/Python/k_nearest_neighbors.ipynb) | [:chart_with_upwards_trend: R code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Classification/K-Nearest%20Neighbors%20(K-NN)/R/knn.R)
 
 ---
 **:pushpin: Topics covered:**
 
-- [7.1.1. Definition](#711-definition)
-- [7.1.2. How does it work?](#712-how-does-it-work)
-- [7.1.3. The distance](#713-the-distance)
+- [6.2.1. Definition](#621-definition)
+- [6.2.2. How does it work?](#622-how-does-it-work)
+- [6.2.3. The distance](#623-the-distance)
 
 ---
 
-### 7.1.1. Definition
+### 6.2.1. Definition
 
 KNN (K - closest neighbors) is a supervised learning algorithm that can be applied in classification or regression.
 
@@ -276,7 +277,7 @@ K-NN is a type of instance-based (means that our algorithm doesn't explicity lea
   <img src=".github/KNN_2.png" alt="Calculating the distances"/>
 </p>
 
-### 7.1.2. How does it work?
+### 6.2.2. How does it work?
 
   > **Step 1**: Choose the number K of neighbors;
   >
@@ -286,7 +287,7 @@ K-NN is a type of instance-based (means that our algorithm doesn't explicity lea
   >
   > **Step 4**: Assign the new data point to the category where you counted the most nighbors.
 
-### 7.1.3. The distance
+### 6.2.3. The distance
 
 Euclidean distance is usually the most used method to determine the distance between the point we want to include and its neighbors. 
 
@@ -305,3 +306,8 @@ However, there are other approaches, as we can see below:
 [What is Hamming Distance?](https://www.tutorialspoint.com/what-is-hamming-distance#:~:text=Hamming%20distance%20is%20a%20metric,d(a%2Cb).)<br />
 [Taxicab geometry (Manhattan Distance)](https://en.wikipedia.org/wiki/Taxicab_geometry)<br />
 [Minkowski distance](https://en.wikipedia.org/wiki/Minkowski_distance)
+
+## 6.3. Support Vector Machine
+
+##### :warning: Because these algorithms contain many calculations, the execution of these codes can take a few minutes.
+[:snake: Notebook code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Classification/K-Nearest%20Neighbors%20(K-NN)/Python/k_nearest_neighbors.ipynb) | [:chart_with_upwards_trend: R code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Classification/K-Nearest%20Neighbors%20(K-NN)/R/knn.R)
