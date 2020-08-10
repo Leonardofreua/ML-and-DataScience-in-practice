@@ -1,5 +1,15 @@
 # Logistic Regression
 
+# -----------------------------------------------------------------------
+#                               SCENARIO                                |
+#                                                                       |
+# A company that sells automobiles and is launching a new SUV models,   |
+# hired us to analyze a data set and predict  which of the customers    |
+# on this list are more likely to buy the new SUV, from which the       |
+# company can reach these customers through of Social Networks.         |
+#                                                                       |
+# -----------------------------------------------------------------------
+
 # Importing the dataset
 dataset = read.csv('../../../Datasets/Social_Network_Ads.csv')
 
