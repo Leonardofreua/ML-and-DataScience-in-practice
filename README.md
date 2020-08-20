@@ -312,7 +312,7 @@ However, there are other approaches, as we can see below:
 ## 6.3. Support Vector Machine
 
 ##### :warning: Because these algorithms contain many calculations, the execution of these codes can take a few minutes.
-[:snake: Notebook code]() | [:chart_with_upwards_trend: R code]()
+[:snake: Notebook code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Classification/Support%20Vector%20Machine%20(SVM)/Python/support_vector_machine.ipynb) | [:chart_with_upwards_trend: R code](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/blob/master/Classification/Support%20Vector%20Machine%20(SVM)/R/svm.R)
 
 We already covered this algorithm in the [Regression section](https://github.com/Leonardofreua/ML-and-DataScience-in-practice/tree/master/Regression#44-support-vector-machine), so for more details, access this section. <ins>However</ins>, as we will se below, we will briefly explain the behavior of SVM in the **Classification** environment.
 
